@@ -1,0 +1,329 @@
+{
+	"info": {
+		"_postman_id": "51a2d403-5746-4b14-a948-00a8a00eb322",
+		"name": "Fast Clean",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_name\":\"Mohamed\",\r\n    \"client_password\":\"123456\",\r\n    \"client_email\":\"mohamed@mohamed.com\",\r\n    \"client_phone\":\"01101111111\",\r\n    \"device_token\":\"tokn\",\r\n    \"type\":\"android\",\r\n    \"lang\":\"en\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/add-client.php",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"add-client.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"011011\",\r\n    \"password\":\"1234567\",\r\n    \"lang\":\"ar\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/update_pass.php",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"update_pass.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_phone\":\"011\",\r\n    \"client_password\":\"123456\",\r\n    \"device_token\":\"f2GKmJkk3cg:APA91bE_7KoxLd81Fplvcr1kPFZBKeBmrViW5Cyvamju3Uqp974s9B70F10ZDLAt8JW57bhjk6zi5En8nILn0z3PbRjCOcBj-EaRZGDU7syCDS_lcv0y89qmiSUDO2FLgnqDue-_Gchs\",\r\n    \"type\":\"android\",\r\n    \"lang\":\"ar\"\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/login.php",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"login.php"
+							]
+						},
+						"description": "login client"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Slider",
+			"item": [
+				{
+					"name": "get-all-slider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/get-slider.php",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"get-slider.php"
+							]
+						},
+						"description": "get all slider from the table with out any conditions"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Home",
+			"item": [
+				{
+					"name": "get-washer-By- rating",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/get-washer-rate.php?lang=ar",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"get-washer-rate.php"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-washers-by-category_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/get-washers-by-category.php?category_id=1&lang=ar&client_id=1",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"get-washers-by-category.php"
+							],
+							"query": [
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "lang",
+									"value": "ar"
+								},
+								{
+									"key": "client_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "washer",
+			"item": [
+				{
+					"name": "get-one-washer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/get-washer.php?washer_id=1&lang=ar&client_id=1",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"get-washer.php"
+							],
+							"query": [
+								{
+									"key": "washer_id",
+									"value": "1"
+								},
+								{
+									"key": "lang",
+									"value": "ar"
+								},
+								{
+									"key": "client_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "edit-client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_id\":\"1\",\r\n    \"client_name\":\"aname\",\r\n    \"client_password\":\"123456\",\r\n    \"client_phone\":\"0110111011\",\r\n    \"lang\":\"ar\"\r\n}"
+						},
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/edit-client.php",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"edit-client.php"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "General",
+			"item": [
+				{
+					"name": "get-vehicle_type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/get-vehicle.php?lang=ar",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"get-vehicle.php"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-subscription_type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://fastcleanbh.com/system/api/get-subscription_type.php?lang=ar",
+							"protocol": "http",
+							"host": [
+								"fastcleanbh",
+								"com"
+							],
+							"path": [
+								"system",
+								"api",
+								"get-subscription_type.php"
+							],
+							"query": [
+								{
+									"key": "lang",
+									"value": "ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

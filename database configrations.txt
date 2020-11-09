@@ -1,0 +1,16 @@
+ Domain: fastcleanbh.com:2082
+| Ip: 188.165.228.217 (n)
+| HasCgi: n
+| UserName: fastcleanbh
+| PassWord: #5p0EMXN[CJ9
+
+
+
+
+
+User: fastcleanbh_system
+
+Database: fastcleanbh_system
+
+Password : fastcleanbh_system
+

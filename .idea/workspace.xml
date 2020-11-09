@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4510e4bf-319d-4b2d-9435-b6c18ad7a5db" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1jSUTpcTzx96ZxLFp8FgFhgLHDc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Learning/simpleCrud" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4510e4bf-319d-4b2d-9435-b6c18ad7a5db" name="Default Changelist" comment="" />
+      <created>1603796996473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603796996473</updated>
+      <workItem from="1603796997501" duration="755000" />
+      <workItem from="1603798344833" duration="5262000" />
+      <workItem from="1603805138173" duration="5847000" />
+      <workItem from="1603875622981" duration="5407000" />
+      <workItem from="1603894127114" duration="6792000" />
+      <workItem from="1603986120123" duration="1083000" />
+      <workItem from="1604122561156" duration="21511000" />
+      <workItem from="1604185159603" duration="12955000" />
+      <workItem from="1604229092918" duration="15933000" />
+      <workItem from="1604297703115" duration="25405000" />
+      <workItem from="1604385398435" duration="1264000" />
+      <workItem from="1604389449550" duration="13402000" />
+      <workItem from="1604413946847" duration="3182000" />
+      <workItem from="1604473215699" duration="79000" />
+      <workItem from="1604474651839" duration="15423000" />
+      <workItem from="1604500862778" duration="1698000" />
+      <workItem from="1604503204794" duration="405000" />
+      <workItem from="1604556316202" duration="33654000" />
+      <workItem from="1604741778123" duration="5736000" />
+      <workItem from="1604820177817" duration="416000" />
+      <workItem from="1604823146286" duration="354000" />
+      <workItem from="1604823586959" duration="908000" />
+      <workItem from="1604824855227" duration="10587000" />
+      <workItem from="1604839588490" duration="82000" />
+      <workItem from="1604839681351" duration="6300000" />
+      <workItem from="1604904458258" duration="14629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2224" y="15" key="#Deployment" timestamp="1604824981309">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="342" y="17" key="#Deployment/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604473239768" />
+    <state x="2224" y="15" key="#Deployment/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604824981309" />
+    <state x="342" y="17" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1604134862220" />
+    <state x="361" y="53" key="#Plugins" timestamp="1604839670023">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="53" key="#Plugins/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604839670023" />
+    <state x="537" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604744362872">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="537" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604744362872" />
+    <state x="103" y="104" width="1330" height="616" key="DiffContextDialog" timestamp="1604652251629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2012" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604475503091" />
+    <state x="103" y="104" width="1330" height="616" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1604652251629" />
+    <state x="2003" y="82" width="1201" height="564" key="DirDiffDialog" timestamp="1604934734843">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2003" y="82" width="1201" height="564" key="DirDiffDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604934734843" />
+    <state x="93" y="93" width="1350" height="638" key="DirDiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1604745117128" />
+    <state x="2408" y="148" key="FileChooserDialogImpl" timestamp="1604934993075">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604503233936" />
+    <state x="2408" y="148" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604934993075" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604756279164" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1604617246007">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604617246007" />
+    <state x="2166" y="18" key="SettingsEditor" timestamp="1604824833738">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604823520319" />
+    <state x="2166" y="18" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604824833738" />
+    <state x="754" y="183" width="688" height="592" key="find.popup" timestamp="1603802938981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="754" y="183" width="688" height="592" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1603802938981" />
+    <state x="635" y="89" key="ftp.server.browser" timestamp="1603798493745">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="635" y="89" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1603798493745" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604579912084">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2298" y="165" key="run.anything.popup/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604325410019" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604579912084" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604660353450">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2303" y="128" width="672" height="600" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604315156409" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604660353450" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>remoteDeploymentFS://&lt;82434b3e-5779-42aa-a4b8-67f14e329a8f&gt;/system/api/get-project-drawing.php</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
