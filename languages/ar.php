@@ -227,6 +227,10 @@ $site_lang['add_new_news'] = 'اضافة خبر جديد';
 /* Settings */
 $site_lang['english_footer_caption'] = 'الكابشن باللغه الانجليزيه';
 $site_lang['arabic_footer_caption'] = 'الكابشن باللغه العربيه';
+$site_lang['android_version'] = 'اصدار الاندرويد';
+$site_lang['ios_version'] = 'اصدار IOS';
+$site_lang['ios_link'] = 'لينك IOS store';
+$site_lang['android_link'] = 'لينك Android Store';
 $site_lang['map_lat'] = 'خطوط الطول';
 $site_lang['map_lang'] = 'خطوط العرض';
 
@@ -234,7 +238,9 @@ $site_lang['map_lang'] = 'خطوط العرض';
 
 
 $site_lang['about_us'] = 'من نحن';
-$site_lang['about_promo'] = 'عن برومو';
+$site_lang['about_fastclean'] = 'عن برومو';
+$site_lang['arabic_title'] = 'العنوان باللغه العربيه';
+$site_lang['english_title'] = 'العنوان باللغه الانجليزيه';
 $site_lang['contact_us'] = 'اتصل بنا';
 $site_lang['search'] = 'بحث';
 $site_lang['search_by_name'] = 'بحث بالاسم';
@@ -243,6 +249,7 @@ $site_lang['verification_code'] = 'تفعيل رقم اهاتف';
 $site_lang['OUR_LOCATION'] = 'موقعنا';
 $site_lang['my_profile'] = 'الملف الشخصى';
 $site_lang['my_cart'] = 'سلة التسوق';
+$site_lang['accept_orders'] = 'يقبل الطلبات';
 $site_lang['my_orders'] = 'طلباتي';
 $site_lang['my_favorite'] = 'المفضلة';
 $site_lang['my_addresses'] = 'عناويني';

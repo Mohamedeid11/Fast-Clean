@@ -40,12 +40,13 @@ if (isset($_GET['lang']) && $_GET['lang'] != '') {
             $about = array();
 
             $about["id"] = $row["id"];
-            $about["image"] = $row["image"];
+            $about["logo"] = $row["image"];
+            $about["image_backGround"] = $row["image_backGround"];
             if ($lang == "ar") {
-                $about["project_name"] = $row["title"];
-                $about["content"] = $row["content"];
+                $about["title"] = $row["title_ar"];
+                $about["content"] = $row["content_ar"];
             } else {
-                $about["project_name"] = $row["title_en"];
+                $about["title"] = $row["title_en"];
                 $about["content"] = $row["content_en"];
             }
             // push single product into final response array

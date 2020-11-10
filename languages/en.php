@@ -220,13 +220,21 @@ $site_lang['add_new_news'] = 'Add New News';
 /* Settings */
 $site_lang['english_footer_caption'] = 'Footer Caption In English';
 $site_lang['arabic_footer_caption'] = 'Footer Caption In arabic';
+$site_lang['android_version'] = 'Android Version';
+$site_lang['ios_version'] = 'IOS Version';
+$site_lang['ios_link'] = 'ِApple Link store';
+$site_lang['android_link'] = 'Android Store Link';
 $site_lang['map_lat'] = 'Map latitude';
 $site_lang['map_lang'] = 'Map longitude';
 
 
 
 $site_lang['about_us'] = 'About Us';
-$site_lang['about_promo'] = 'About Promo';
+$site_lang['about_promo'] = 'About Fast Clean';
+$site_lang['arabic_title'] = 'Arabic title';
+$site_lang['english_title'] = 'English title';
+$site_lang['arabic_content'] = 'Arabic Content';
+$site_lang['english_content'] = 'English Content';
 $site_lang['contact_us'] = 'Contact Us';
 $site_lang['search'] = 'Search';
 $site_lang['search_by_name'] = 'Search By Name';
@@ -240,6 +248,7 @@ $site_lang['my_cart'] = 'My Cart';
 $site_lang['cart_total'] = 'Cart Total ';
 $site_lang['sub_total'] = 'Sub Total ';
 
+$site_lang['accept_orders'] = 'Accept Orders';
 $site_lang['my_orders'] = 'My Current Orders';
 $site_lang['my_favorite'] = 'My Favorite';
 $site_lang['my_addresses'] = 'My Addresses';

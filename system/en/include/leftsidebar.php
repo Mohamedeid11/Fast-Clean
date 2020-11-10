@@ -114,6 +114,10 @@
                 </ul>
             </li>
 
+            <li id="item302" class="has-sub">
+                <a href="comments_view.php"><span><?= lang('comments_rates')?></span></a>
+            </li>
+
             <li id="item300" class="has-sub">
                 <a href="about_edit.php?id=1"><span><?= lang('about_us')?></span></a>
             </li>
@@ -142,10 +146,6 @@
         <?php } ?>
 
         <?php if ($_SESSION['users'] == '1') { ?>
-
-            <li id="item302" class="has-sub">
-                <a href="comments_view.php"><span><?= lang('comments_rates')?></span></a>
-            </li>
 
             <li id="item303" ><a href="setting_edit.php"><span><?= lang('settings')?></span></a></li>
             

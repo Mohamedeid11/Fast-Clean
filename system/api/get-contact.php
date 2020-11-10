@@ -42,16 +42,17 @@ if (isset($_GET['lang']) && $_GET['lang'] != '') {
 			
 			$contact["id"] = $row["id"];
 			if($lang=="ar"){
-			    $contact["address"] = $row["address"];
+			    $contact["address"] = $row["address_ar"];
 			}else{
-			$contact["address_en"] = $row["address_en"];
+			    $contact["address"] = $row["address_en"];
 			}
                 $contact["phone"] = $row["phone"];
-                $contact["mobile"] = $row["mobile"];
                 $contact["email"] = $row["email"];
-                $contact["instagram"] = $row["instagram"];
+                $contact["email"] = $row["email"];
                 $contact["twitter"] = $row["twitter"];
                 $contact["facebook"] = $row["facebook"];
+                $contact["whats_app"] = $row["whats_app"];
+                $contact["instagram"] = $row["instagram"];
                 $contact["website"] = $row["website"];
 
 			// push single contact into final response array
