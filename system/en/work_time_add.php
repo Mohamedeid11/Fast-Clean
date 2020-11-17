@@ -27,10 +27,8 @@ if (!loggedin()) {
     if (isset($_POST['submit'])) {
 
         $washer_id = $_POST['washer_id'];
-        $day_en = mysqli_real_escape_string($con, trim($_POST['day_en']));
-        $day_ar = mysqli_real_escape_string($con, trim($_POST['day_ar']));
-        $from = mysqli_real_escape_string($con, trim($_POST['from']));
-        $to = mysqli_real_escape_string($con, trim($_POST['to']));
+        $day = mysqli_real_escape_string($con, trim($_POST['day']));
+        $time = mysqli_real_escape_string($con, trim($_POST['time']));
 
 
         $errors = array();
@@ -42,7 +40,7 @@ if (!loggedin()) {
                 echo get_error($error);
             }
         } else {
-            $con->query(" INSERT INTO `work_time` (`washer_id`,`day_en`, `day_ar`, `from`, `to`) VALUES ('$washer_id', '$day_en' , '$day_ar' , '$from' , '$to')");
+            $con->query(" INSERT INTO `work_time` (`washer_id`,`day`, `time`) VALUES ('$washer_id', '$day' , '$time')");
             echo get_success("Successfully Added");
         }
     }
@@ -84,21 +82,13 @@ if (!loggedin()) {
                                         </select>
                                     </div>
                                     <div class="form-group col-md-5">
-                                        <label for="sub_cat_desc"><?=lang('day_en')?></label>
-                                        <input type="text" class="form-control" rows="3" name="day_en"  minlength="3" maxlength="1000" placeholder="<?=lang('day_en')?>"></input>
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="sub_cat_desc"><?=lang('day_ar')?></label>
-                                        <input type="text" class="form-control" rows="3" name="day_ar"  minlength="3" maxlength="1000" placeholder="<?=lang('day_ar')?>"></input>
+                                        <label for="sub_cat_desc"><?=lang('day')?></label>
+                                        <input type="text" class="form-control" rows="3" name="day"  minlength="3" maxlength="1000" placeholder="<?=lang('day')?>"></input>
                                     </div>
                                     <div class="clearfix"></div>
                                     <div class="form-group col-md-5">
-                                        <label for="sub_cat_desc"><?=lang('from')?></label>
-                                        <input type="time" class="form-control" rows="3" name="from"  minlength="3" maxlength="1000" placeholder="<?=lang('from')?>"></input>
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="sub_cat_desc"><?=lang('to')?></label>
-                                        <input type="time" class="form-control" rows="3" name="to"  minlength="3" maxlength="1000" placeholder="<?=lang('to')?>"></input>
+                                        <label for="sub_cat_desc"><?=lang('tome')?></label>
+                                        <input type="text" class="form-control" rows="3" name="time"  minlength="3" maxlength="1000" placeholder="<?=lang('time')?>"></input>
                                     </div>
                                     <div class="clearfix"></div>
                                     <br />
@@ -133,7 +123,7 @@ if (!loggedin()) {
 <script>
     $(document).ready(function () {
         $("#cssmenu ul>li").removeClass("active");
-        $("#item7").addClass("active");
+        $("#item4").addClass("active");
     });
 </script>
 

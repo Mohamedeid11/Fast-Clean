@@ -47,7 +47,7 @@ if (!loggedin()) {
                         </div>
                     </div>
                     <h4>
-                        Count All   : <?php echo $data_num; ?>
+                        <?= lang('count_all')?>  : <?php echo $data_num; ?>
                     </h4>
                     <div class="panel">
                         <div class="panel-body">
@@ -57,11 +57,13 @@ if (!loggedin()) {
                                     <th>#</th>
                                     <th><?=lang('category')?></th>
                                     <th><?=lang('washer_name_english')?></th>
-                                    <th><?=lang('washer_name_arabic')?></th>
                                     <th><?= lang('image')?></th>
+                                    <th><?= lang('service_name_en')?></th>
+                                    <th><?= lang('washer_images')?></th>
+                                    <th><?= lang('washer_address')?></th>
+                                    <th><?= lang('washer_contact')?></th>
+                                    <th><?= lang('work_time')?></th>
                                     <th><?= lang('status')?></th>
-                                    <th><?= lang('details')?></th>
-                                    <th><?= lang('date_add')?></th>
                                     <th><?= lang('action')?></th>
 
                                 </tr>
@@ -69,6 +71,7 @@ if (!loggedin()) {
                                 <tbody>
                                 <?php
                                 global $con;
+
 
                                 $query = $con->query("SELECT * FROM `washers` ORDER BY `washer_id` ASC");
                                 $x = 1;
@@ -82,6 +85,28 @@ if (!loggedin()) {
                                     $washer_image = $row['washer_image'];
                                     $display = $row['display'];
                                     $date = $row['date'];
+
+                                $query_service = $con->query("SELECT * FROM `services` where  `washer_id` = '$washer_id' ");
+                                while ($row_service = mysqli_fetch_assoc($query_service)) {
+                                    $service_name_en = $row_service['service_name_en'];
+                                    $service_name_ar = $row_service['service_name_ar'];
+                                }
+
+                                $query_images = $con->query("SELECT * FROM `washer_images` where  `washer_id` = '$washer_id' ");
+                                while ($row_images = mysqli_fetch_assoc($query_images)) {
+                                    $washer_images = $row_images['image'];
+                                }
+
+                                $query_address = $con->query("SELECT * FROM `washer_address` where  `washer_id` = '$washer_id' ");
+                                while ($row_address = mysqli_fetch_assoc($query_address)) {
+                                    $address_en = $row_address['address_en'];
+                                    $address_ar = $row_address['address_ar'];
+                                }
+
+                                $query_contact = $con->query("SELECT * FROM `washer_contact` ORDER BY `id` ASC");
+                                while ($row_contact = mysqli_fetch_assoc($query_contact)) {
+                                    $phone = $row_contact['phone'];
+                                }
                                     ?>
                                     <tr class="gradeX<?= $washer_id ?>">
                                         <td><?php echo $x; ?></td>
@@ -89,8 +114,8 @@ if (!loggedin()) {
                                         $queryB = $con->query("SELECT * FROM `category` WHERE `id`='$category_id'");
 
                                         while ($row = mysqli_fetch_assoc($queryB)) {
-                                            $id = $row['id'] ;
-                                            $category_name_en = $row['category_name_en'] ;
+                                            $id = $row['id'];
+                                            $category_name_en = $row['category_name_en'];
                                         }
                                         ?>
                                         <td><a href="washers_view_by_category.php?categoryID=<?=$category_id?>"><?=$category_name_en; ?></a></td>
@@ -98,14 +123,15 @@ if (!loggedin()) {
                                             <?= $washer_name_en ?>
                                         </td>
                                         <td>
-                                            <?= $washer_name_ar ?>
-                                        </td>
-                                        <td>
                                             <a href="<?= $washer_image; ?>" class="image-popup" title="<?= $washer_name_ar; ?>">
                                                 <img src="<?= $washer_image; ?>" class="thumb-img" alt="<?= $washer_name_ar; ?>" height="100" style="width:100px;">
                                             </a>
                                         </td>
-
+                                        <td><a href="washer_service_view.php" target="_blank" class="on-default"><i class="fa fa-eye"></i></a></td>
+                                        <td><a href="washer_images_view.php" target="_blank" class="on-default"><i class="fa fa-eye"></i></a></td>
+                                        <td><a href="washer_address_view.php" target="_blank" class="on-default"><i class="fa fa-eye"></i></a></td>
+                                        <td><a href="washer_contact_view.php" target="_blank" class="on-default"><i class="fa fa-eye"></i></a></td>
+                                        <td><a href="work_time_view.php" class="on-default"><i class="fa fa-eye"></i></a></td>
                                         <td>
                                             <?php if ($display == 1) { ?>
                                                 <input class="change_status_off" data-id="<?=$washer_id; ?>" type="checkbox"
@@ -120,15 +146,10 @@ if (!loggedin()) {
                                             }
                                             ?>
                                         </td>
-                                        <td style="text-align:center;">
-                                            <a href="washer_details.php?washerId=<?= $washer_id; ?>" class="on-default"><i class="fa fa-eye"></i></a>
-                                        </td>
 
-                                        <td><?= $date; ?></td>
                                         <td class="actions">
                                             <a href="washer_edit.php?washer_typeID=<?= $washer_id; ?>" class="on-default"><i class="fa fa-pencil"></i></a>
-                                        </td>
-                                        <td class="actions">
+                                            <a href="washer_details.php?washerId=<?= $washer_id; ?>" class="on-default"><i class="fa fa-eye"></i></a>
                                             <a href="<?= $washer_id; ?>" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
                                         </td>
                                     </tr>

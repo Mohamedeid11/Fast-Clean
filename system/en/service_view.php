@@ -1,4 +1,4 @@
-<?php
+w<?php
 include("config.php");
 if (!loggedin()) {
     header("Location: login.php");

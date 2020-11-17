@@ -53,7 +53,7 @@ if (!loggedin()) {
                                         <th>Whats App</th>
                                         <th>Face Book</th>
                                         <th>Instagram</th>
-                                        <th>Twitter</th>
+                                        <th>Snap chat</th>
                                         <th><?=lang('date_add')?></th>
                                         <th><?=lang('action')?></th>
 
@@ -69,10 +69,10 @@ if (!loggedin()) {
                                         $id = $row['id'];
                                         $washer_id = $row['washer_id'];
                                         $phone = $row['phone'];
-                                        $whats_app = $row['whats_app'];
+                                        $mobile = $row['mobile'];
                                         $facebook = $row['facebook'];
                                         $instagram = $row['instagram'];
-                                        $twitter = $row['twitter'];
+                                        $snapchat = $row['snapchat'];
                                         $date = $row['date'];
                                         ?>
                                         <tr class="gradeX">
@@ -93,7 +93,7 @@ if (!loggedin()) {
                                                 <a href="tel:<?= $phone ?>" target="_blank"> <?= $phone ?> </a>
                                             </td>
                                             <td>
-                                                <a href="https://wa.me/<?= $whats_app ?>" target="_blank"> <?= $whats_app ?> </a>
+                                                <a href="https://wa.me/<?= $mobile ?>" target="_blank"> <?= $mobile ?> </a>
                                             </td>
                                             <td>
                                                 <?= $facebook ?>
@@ -102,7 +102,7 @@ if (!loggedin()) {
                                                 <?= $instagram ?>
                                             </td>
                                             <td>
-                                                <?= $twitter ?>
+                                                <?= $snapchat ?>
                                             </td>
 
 
@@ -191,8 +191,8 @@ if (!loggedin()) {
 
 <script>
     $(document).ready(function () {
-        $("#cssslider ul>li").removeClass("active");
-        $("#item5").addClass("active");
+        $("#cssmenu ul>li").removeClass("active");
+        $("#item4").addClass("active");
     });
 </script>
 

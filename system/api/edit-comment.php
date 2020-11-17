@@ -26,6 +26,7 @@ header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 // get all products from products table
 // Start Functionality  
 $postdata = file_get_contents("php://input");
+$product = array();
 
 if (isset($postdata) && !empty($postdata)) {
     $Req = json_decode($postdata, TRUE);
@@ -34,13 +35,12 @@ if (isset($postdata) && !empty($postdata)) {
     $comment = $Req['comment'];
     $rate = $Req['rate'];
 
-    $result = mysql_query("UPDATE `sub_category_comments` SET `comment`='$comment', `rate`='$rate' WHERE `comment_id`='$comment_id'");
+    $result = mysql_query("UPDATE `comments` SET `comment`='$comment', `rate`='$rate' WHERE `comment_id`='$comment_id'");
 
 
-    $response["product"] = array();
 
     // temp user array
-    $product = array();
+    $response["product"] = array();
 
     // push single product into final response array
     array_push($response["product"], $product);

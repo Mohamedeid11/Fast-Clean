@@ -30,8 +30,8 @@ $postdata = file_get_contents("php://input");
 if (isset($postdata) && !empty($postdata)) {
     $Req = json_decode($postdata, TRUE);
 
-    $lat = trim($Req['lat']);
-    $lang = trim($Req['lang']);
+    $lat_location = trim($Req['lat_location']);
+    $long_location = trim($Req['long_location']);
     $region = trim($Req['region_id']);
     $block = mysql_real_escape_string(trim($Req['block']));
     $road = mysql_real_escape_string(trim($Req['road']));
@@ -41,22 +41,20 @@ if (isset($postdata) && !empty($postdata)) {
     $note = mysql_real_escape_string(trim($Req['note']));
     $client_id = trim($Req['client_id']);
 
-    $result = mysql_query("INSERT INTO client_addresses(lat,lang,region,block,road,building,flat_number,client_phone,note,client_id,date) 
-	VALUES('$lat','$lang','$region','$block','$road','$building','$flat_number','$client_phone','$note','$client_id','" . date("Y-m-d H:i:s") . "')");
+    $result = mysql_query("INSERT INTO client_addresses(lat_location,long_location,region,block,road,building,flat_number,client_phone,note,client_id,date) 
+	VALUES('$lat_location','$long_location','$region','$block','$road','$building','$flat_number','$client_phone','$note','$client_id','" . date("Y-m-d H:i:s") . "')");
 
     $response["product"] = array();
 
     // temp user array
     $product = array();
     $product["client_address_id"] = mysql_insert_id();
-    $product["lat"] = $Req["lat"];
-    $product["lang"] = $Req["lang"];
+    $product["lat_location"] = $Req["lat_location"];
+    $product["long_location"] = $Req["long_location"];
     $product["region_id"] = $Req["region_id"];
 
     $region_id = $Req["region_id"];
-    $product["region_name"] = get_region_name($region_id);
-    $product["charge"] = get_charge($region_id);
-    $product["min_order"] = get_min_order($region_id);
+//    $product["region_name"] = get_region_name($region_id);
 
 
     $product["block"] = $Req["block"];

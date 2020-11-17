@@ -47,7 +47,7 @@ if (!loggedin()) {
                         </div>
                     </div>
                     <h4>
-                        Count All   : <?php echo $data_num; ?>
+                        <?= lang('count_all')?>   : <?php echo $data_num; ?>
                     </h4>
                     <div class="panel">
                         <div class="panel-body">
@@ -56,7 +56,7 @@ if (!loggedin()) {
                                 <tr>
                                     <th>#</th>
                                     <th><?= lang('name_english')?></th>
-                                    <th><?= lang('name_Arabic')?></th>
+                                    <th><?= lang('name_arabic')?></th>
                                     <th><?= lang('status')?></th>
                                     <th><?= lang('date_add')?></th>
                                     <th><?= lang('action')?></th>

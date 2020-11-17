@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 09, 2020 at 06:01 PM
--- Server version: 10.2.35-MariaDB
+-- Generation Time: Nov 17, 2020 at 09:10 AM
+-- Server version: 10.2.36-MariaDB
 -- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -30,28 +30,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `about` (
   `id` int(11) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `content` text NOT NULL,
-  `title_en` varchar(255) NOT NULL,
-  `content_en` text NOT NULL,
-  `vision_en` text CHARACTER SET utf8mb4 DEFAULT NULL,
-  `vision_ar` text CHARACTER SET utf8mb4 DEFAULT NULL,
-  `vision_image` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `mission_en` text CHARACTER SET utf16 DEFAULT NULL,
-  `mission_ar` text CHARACTER SET utf8mb4 DEFAULT NULL,
-  `mission_image` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `goals_en` text CHARACTER SET utf8mb4 DEFAULT NULL,
-  `goals_ar` text DEFAULT NULL,
-  `goals_image` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL
+  `image` varchar(255) DEFAULT NULL,
+  `image_backGround` varchar(255) DEFAULT NULL,
+  `title_ar` varchar(255) DEFAULT NULL,
+  `content_ar` text DEFAULT NULL,
+  `title_en` varchar(255) DEFAULT NULL,
+  `content_en` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `about`
 --
 
-INSERT INTO `about` (`id`, `image`, `title`, `content`, `title_en`, `content_en`, `vision_en`, `vision_ar`, `vision_image`, `mission_en`, `mission_ar`, `mission_image`, `goals_en`, `goals_ar`, `goals_image`) VALUES
-(1, 'http://www.promosbh.com/newsite/system/api/uploads/about/logo copy.png', 'برومو ميديا', 'شركة برومو هي شركة تسويق رقمي مبتكرة في مملكة البحرين ، متخصصة في جميع أنواع التسويق الرقمي والإعلان والورق والإعلان الرقمي وقنوات التواصل الاجتماعي.', 'Promo Media', 'Promo Company Is An Innovative Digital Marketing Company In The Kingdom Of Bahrain, Specialized In All Types Of Digital Marketing, Advertising, Paper And Digital Advertising And Social Media Channels', 'Achieve leadership in providing creative services Which is characterized by effectiveness and sustainability', 'تحقيق الريادة في تقديم خدمات إبداعية تتميز بالفعالية والاستدامة.', 'http://www.promosbh.com/newsite/system/api/uploads/about/photo-of-people-using-laptops-3182833.png', 'Applying the principles of advertising and marketing in a manner that is characterized by quality and integrity and achieves a future vision for institutions and companies', 'تطبيق مبادئ الإعلان والتسويق بشكل يتسم بالجودة والنزاهة ويحقق رؤية مستقبلية للمؤسسات والشركات.', 'http://www.promosbh.com/newsite/system/api/uploads/about/photo-of-people-near-wooden-table-3184418.png', '- Provide a clear marketing and economic vision.</br>\r\n- Innovative solutions that achieve current and future goals.</br>\r\n- Create and support a competitive advantage.</br>\r\n- Total quality is a cornerstone of everything we offer', '- تقديم رؤية تسويقية واقتصادية واضحة.</br>\r\n- حلول مبتكرة تحقق الأهداف الحالية والمستقبلية.</br>\r\n- خلق ميزة تنافسية ودعمها.</br>\r\n- الجودة الشاملة هي حجر الزاوية في كل ما نقدمه', 'http://www.promosbh.com/newsite/system/api/uploads/about/working-in-a-group-6224.png');
+INSERT INTO `about` (`id`, `image`, `image_backGround`, `title_ar`, `content_ar`, `title_en`, `content_en`) VALUES
+(1, 'http://fastcleanbh.com/system/api/uploads/about/78-785827_user-profile-avatar-login-account-male-user-icon.png', 'http://fastcleanbh.com/system/api/uploads/about/160500892178-785827_user-profile-avatar-login-account-male-user-icon.png', 'فاست كلين ', 'انشرت ظاهرة عمال غسل السييارات كثيرا  في الفتره الاخيره فهي تشكل مصدر دخل مهم لعمال يشكون ضعف الرواتب او العماله الائبه غير القانونيه ورغم الغرامه التي يشكل خيالها هاجسا للعمال يسود صمت بين اطراف الغلاقه وكانه اتفاق ضمني \r\n\r\n\r\nوكاي ظاهره لا يمكن رؤيتها من زاويه واحده ايجابيه كانت ام سلبيه فلهذه الظاهره اكثر من زاويه للرؤيه بين من يرى فيها ضررا جماليا على المنظزر العام او اقتصاديا على اصحاب مغاسل السيارات وعلى البلد باعتبارها تفذي ظاهره اخرى هي العماله السائبه وبين من يرى فيها حلا رخيصا لاصحاب السيارات ورزقا لعمال مساكين لا يننبغي قطعه', 'Fast Clean', 'انشرت ظاهرة عمال غسل السييارات كثيرا  في الفتره الاخيره فهي تشكل مصدر دخل مهم لعمال يشكون ضعف الرواتب او العماله الائبه غير القانونيه ورغم الغرامه التي يشكل خيالها هاجسا للعمال يسود صمت بين اطراف الغلاقه وكانه اتفاق ضمني \r\n\r\nوكاي ظاهره لا يمكن رؤيتها من زاويه واحده ايجابيه كانت ام سلبيه فلهذه الظاهره اكثر من زاويه للرؤيه بين من يرى فيها ضررا جماليا على المنظزر العام او اقتصاديا على اصحاب مغاسل السيارات وعلى البلد باعتبارها تفذي ظاهره اخرى هي العماله السائبه وبين من يرى فيها حلا رخيصا لاصحاب السيارات ورزقا لعمال مساكين لا يننبغي قطعه');
 
 -- --------------------------------------------------------
 
@@ -117,16 +109,17 @@ INSERT INTO `branches_regions` (`id`, `region_id`, `branche_id`, `date`) VALUES
 
 CREATE TABLE `cart` (
   `cart_id` int(11) NOT NULL,
-  `sub_category_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `size_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
-  `addition_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `quantity` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `washer_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `vehicle_id` int(11) DEFAULT NULL,
+  `subscription_id` int(11) DEFAULT NULL,
+  `service_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `order_date` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `order_time` varchar(255) CHARACTER SET utf8 NOT NULL,
   `price` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `client_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `remove_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `note` varchar(255) CHARACTER SET utf8 NOT NULL,
   `status` tinyint(4) NOT NULL DEFAULT 0,
-  `date` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `date` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT current_timestamp(),
   `cart_type` int(11) NOT NULL DEFAULT 1 COMMENT '1:mobileOrder,2:WebOrder	'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -134,55 +127,18 @@ CREATE TABLE `cart` (
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`cart_id`, `sub_category_id`, `size_id`, `addition_id`, `quantity`, `price`, `client_id`, `remove_id`, `note`, `status`, `date`, `cart_type`) VALUES
-(1, '35', '64', '', '1', '1.5', '15', '', '', 1, '2020-07-19', 1),
-(2, '22', '47', '', '1', '0.8', '15', '', '', 1, '2020-07-19', 1),
-(3, '21', '46', '', '3', '2.4', '15', '', 'Test Not 555', 1, '2020-07-19', 1),
-(4, '6', '9', '', '1', '4', '15', '', '', 1, '2020-07-19', 1),
-(5, '35', '64', '', '1', '1.5', '', '', '', 0, '2020-07-19', 1),
-(6, '35', '64', '', '1', '1.5', '15', '', '', 1, '2020-07-19', 1),
-(7, '5', '8', '', '1', '1.5', '15', '', '', 0, '2020-07-21', 1),
-(8, '6', '9', '', '1', '4', '18', '', '', 1, '2020-07-21', 1),
-(13, '35', '64', '', '1', '1.5', '18', '', '', 1, '2020-07-21', 1),
-(21, '4', '7', '', '1', '2', '18', '', '', 1, '2020-07-21', 1),
-(22, '21', '46', '', '1', '0.8', '18', '', '', 1, '2020-07-21', 1),
-(24, '22', '47', '', '1', '0.8', '18', '', '', 1, '2020-07-21', 1),
-(25, '6', '9', '', '1', '4', '19', '', '', 1, '2020-07-22', 1),
-(26, '35', '64', '', '1', '1.5', '19', '', '', 1, '2020-07-22', 1),
-(27, '35', '64', '', '1', '1.5', '19', '', '', 1, '2020-07-22', 1),
-(33, '1', '3', '', '1', '1.5', '1', '', '', 1, '2020-07-25 18:43:29', 2),
-(34, '2', '5', '', '1', '1.5', '22', '', '', 1, '2020-07-25 19:11:10', 2),
-(35, '35', '64', '', '4', '6', '22', '', '', 1, '2020-07-25 19:24:19', 2),
-(36, '87', '195', '', '1', '1.25', '22', '', '', 1, '2020-07-25 19:42:57', 2),
-(37, '9', '17', '', '2', '3', '23', '', '', 0, '2020-07-26', 1),
-(38, '9', '16', '', '1', '1', '', '', '', 0, '2020-07-26', 1),
-(39, '35', '64', '', '1', '1.5', '', '', '', 0, '2020-07-26', 1),
-(40, '2', '5', '', '1', '1.5', '', '', '', 0, '2020-07-26', 1),
-(41, '33', '62', '', '1', '2.5', '24', '', '', 1, '2020-07-26', 1),
-(42, '28', '55', '', '3', '6', '24', '', '', 1, '2020-07-26', 1),
-(44, '9', '18', '', '1', '1.8', '25', '', '', 1, '2020-07-26', 1),
-(45, '6', '9', '', '1', '4', '24', '', '', 1, '2020-07-26', 1),
-(46, '34', '63', '', '1', '2.5', '24', '', '', 1, '2020-07-26', 1),
-(47, '34', '63', '', '1', '2.5', '24', '', '', 1, '2020-07-26', 1),
-(48, '34', '63', '', '1', '2.5', '24', '', '', 1, '2020-07-26', 1),
-(51, '35', '64', '', '1', '1.5', '24', '', '', 0, '2020-07-26', 1),
-(52, '35', '64', '', '1', '1.5', '24', '', '', 0, '2020-07-26', 1),
-(53, '9', '16', '', '1', '1', '24', '', '', 0, '2020-07-26', 1),
-(54, '34', '63', '', '1', '2.5', '24', '', '', 0, '2020-07-26', 1),
-(55, '34', '63', '', '1', '2.5', '24', '', '', 0, '2020-07-26', 1),
-(57, '1', '2', '', '3', '4.5', '1', '', '', 0, '2020-07-26 09:48:29', 2),
-(58, '6', '9', '', '3', '12', '23', '', '', 0, '2020-07-26', 1),
-(59, '91', '205', '', '1', '7', '24', '', '', 0, '2020-07-27', 1),
-(61, '28', '55', '', '5', '10', '26', '', '', 1, '2020-08-09', 1),
-(83, '22', '47', '', '4', '3.2', '28', '', '', 0, '2020-08-25', 1),
-(85, '9', '16', '', '1', '1', '', '', '', 0, '2020-08-29', 1),
-(88, '35', '64', '', '1', '1.5', '29', '', '', 0, '2020-09-12', 1),
-(89, '2', '5', '', '1', '1.5', '30', '', '', 1, '2020-09-17 08:57:38', 2),
-(91, '22', '47', '', '1', '0.8', '19', '', '', 0, '2020-09-20', 1),
-(92, '15', '35', '', '1', '1.5', '19', '', '', 0, '2020-09-20', 1),
-(93, '9', '18', '', '3', '5.4', '30', '', 'test note', 1, '2020-09-20', 1),
-(94, '100', '230', '', '1', '6', '27', '', '', 0, '2020-09-23', 1),
-(95, '2', '', '', '3', '0', '16', '', 'Amazing', 0, '2020-11-08', 1);
+INSERT INTO `cart` (`cart_id`, `washer_id`, `vehicle_id`, `subscription_id`, `service_id`, `order_date`, `order_time`, `price`, `client_id`, `note`, `status`, `date`, `cart_type`) VALUES
+(11, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '1', 'test add to cart', 0, '2020-11-11', 1),
+(12, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '20', '2', 'test add to cart', 0, '2020-11-11', 1),
+(13, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '3', 'test add to cart', 0, '2020-11-11', 1),
+(14, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '4', 'test add to cart', 0, '2020-11-11', 1),
+(15, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '4', 'test add to cart', 0, '2020-11-11', 1),
+(16, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '4', 'test add to cart', 0, '2020-11-11', 1),
+(17, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '4', 'test add to cart', 0, '2020-11-11', 1),
+(18, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '4', 'test add to cart', 0, '2020-11-12', 1),
+(20, '1', NULL, NULL, '5', '21-08-2020', '11:12 AM', '456183', '1', 'test add to cart', 0, '2020-11-14', 1),
+(21, '1', 1, 3, '5', '21-08-2020', '11:12 AM', '456183', '1', 'test add to cart', 1, '2020-11-14', 1),
+(22, '1', 1, 2, '5', '21-08-2020', '11:12 AM', '456183', '1', 'test add to cart', 1, '2020-11-14', 1);
 
 -- --------------------------------------------------------
 
@@ -203,10 +159,9 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `category_name_en`, `category_name_ar`, `display`, `date`) VALUES
-(1, 'Fixed Washers', 'المغاسل الثابته', 1, '2020-10-31 16:05:16'),
-(2, 'mobile Washer', 'المغاسل المتحركه', 1, '2020-10-31 16:05:44'),
-(3, 'Home subscription laundries', 'مغاسل الاشتراكات المنزليه', 1, '2020-11-04 12:59:53'),
-(5, 'Dorothy Klein', 'Ulla Tillman', 1, '2020-11-08 13:13:21');
+(1, 'Fixed Washers', 'المغاسل الثابتة', 1, '2020-10-31 16:05:16'),
+(2, 'Moving Washer', 'المغاسل المتنقلة', 1, '2020-10-31 16:05:44'),
+(3, 'Home subscription laundries', 'مغاسل الاشتراك المنزلية', 1, '2020-11-04 12:59:53');
 
 -- --------------------------------------------------------
 
@@ -242,37 +197,29 @@ INSERT INTO `clients` (`client_id`, `client_name`, `client_password`, `client_em
 
 CREATE TABLE `client_addresses` (
   `client_address_id` int(11) NOT NULL,
-  `lat` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `lang` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `region` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `block` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `road` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `building` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `flat_number` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `client_phone` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `note` text CHARACTER SET utf8 NOT NULL,
+  `lat_location` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `long_location` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `region` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `block` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `road` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `building` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `flat_number` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `client_phone` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `note` text CHARACTER SET utf8 DEFAULT NULL,
   `client_id` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `date` varchar(255) CHARACTER SET utf8 NOT NULL
+  `date` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `client_addresses`
 --
 
-INSERT INTO `client_addresses` (`client_address_id`, `lat`, `lang`, `region`, `block`, `road`, `building`, `flat_number`, `client_phone`, `note`, `client_id`, `date`) VALUES
-(2, '', '', '84', '323232', '874 Runnymede Rd, Woodside, CA 94062, USA', '323232', '322', '3232323', '333', '9', '2020-06-15 09:39:47'),
-(3, '', '', '83', 'eeewewew', '27887 Baker Ln, Los Altos Hills, CA 94022, USA', '22', 'e2', 'ds', 'ewe we', '7', '2020-06-16 11:42:18'),
-(4, '', '', '', '', 'King Faisal Hwy, Manama, Bahrain', '', '', '', '', '14', '2020-06-18 17:41:16'),
-(5, '0', '0', '86', 'block 10', 'street 9', 'building 11', 'flat 21', '01224300', 'Added notes', '15', '2020-07-16 15:45:19'),
-(6, '31.07887346292744', '29.74619351327419', '85', '088', 'Earthy Pass', 'building', '58', '01554898751', '', '18', '2020-07-21 17:23:31'),
-(7, '26.2371310651502', '50.57821489870548', '85', '222', '383 Government Ave', '555', '', '33340388', '', '19', '2020-07-22 22:46:25'),
-(9, '', '', '83', '125', '1748', '125', '1', '33405497', '', '22', '2020-07-25 20:17:57'),
-(10, '25.829337020136', '50.609143058715', '35', '226', '2648', '2339', '', '33683333', '', '23', '2020-07-26 11:56:05'),
-(11, '26.223095546569', '50.667187505938', '6', '366?', '6678', '667', '', '38883747', '', '24', '2020-07-26 12:19:39'),
-(12, '', '', '76', '345', '543', '5435', '543', '01090083525', '', '1', '2020-07-27 14:26:38'),
-(13, '26.222521025658', '50.662804508001', '51', '115', '1508', '44', '', '34216769', '', '26', '2020-08-09 11:14:31'),
-(14, '26.19802946300285', '50.46638656407595', '4', '551', 'Rd No 5105', '85', '', '33825259', '', '27', '2020-08-17 20:51:41'),
-(15, '26.198022844645823', '50.466386899352074', '68', '525', 'Rd No 5105', '77', '', '33825259', '', '27', '2020-08-17 23:07:13');
+INSERT INTO `client_addresses` (`client_address_id`, `lat_location`, `long_location`, `region`, `block`, `road`, `building`, `flat_number`, `client_phone`, `note`, `client_id`, `date`) VALUES
+(1, '54.545', '34.544', '10', 'bla', 'bla', 'bla', 'bla', '1313232', 'bla bla', '3', '2020-11-12 12:46:07'),
+(2, '54.545', '34.544', '10', 'some Block', 'any road', 'any building', 'any flat number', '011011', 'some notes and if you have something to say just say it', '4', '2020-11-12 12:48:21'),
+(3, '54.545', '34.544', '10', 'some Block', 'any road', 'any building', 'any flat number', '011011', 'some notes and if you have something to say just say it', '1', '2020-11-12 12:48:29'),
+(4, '54.545', '34.544', '10', 'some Block', 'any road', 'any building', 'any flat number', '011011', 'some notes and if you have something to say just say it', '2', '2020-11-12 12:48:33'),
+(5, '54.545', '34.544', '10', 'some Block', 'any road', 'any building', 'any flat number', '011011', 'some notes and if you have something to say just say it', '2', '2020-11-12 13:03:55');
 
 -- --------------------------------------------------------
 
@@ -323,8 +270,9 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`comment_id`, `client_id`, `washer_id`, `comment`, `rate`, `viewed`, `date`) VALUES
-(1, '1', '1', 'some Comment here', '5', 20, 'current_timestamp()'),
-(2, '2', '3', 'لتافقغعتفغتي', '54', 4, 'current_timestamp()');
+(1, '1', '1', 'some Comment here', '5', 20, '2020-11-15 20:18:36'),
+(2, '2', '3', 'لتافقغعتفغتي', '54', 4, '2020-11-15 20:18:36'),
+(4, '3', '3', 'bla bla bla', '1', 0, '2020-11-15 20:18:36');
 
 -- --------------------------------------------------------
 
@@ -379,25 +327,23 @@ INSERT INTO `complaint_images` (`id`, `complaint_id`, `image`) VALUES
 
 CREATE TABLE `contact` (
   `id` int(11) NOT NULL,
-  `address` varchar(255) NOT NULL,
+  `address_ar` varchar(255) DEFAULT NULL,
   `address_en` varchar(255) NOT NULL,
   `phone` varchar(255) NOT NULL,
-  `mobile` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `google-plus` varchar(255) NOT NULL,
   `twitter` varchar(255) NOT NULL,
   `facebook` varchar(255) NOT NULL,
-  `pinterest` varchar(255) NOT NULL,
-  `website` varchar(255) NOT NULL,
-  `accept_orders` int(255) NOT NULL
+  `whats_app` varchar(255) DEFAULT NULL,
+  `instagram` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `website` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `contact`
 --
 
-INSERT INTO `contact` (`id`, `address`, `address_en`, `phone`, `mobile`, `email`, `google-plus`, `twitter`, `facebook`, `pinterest`, `website`, `accept_orders`) VALUES
-(1, 'مبنى 1029 ، مجمع 436 ، طريق 3621 ، مكتب 63 ، مملكة البحرين ، منطقة السيف', 'Building 1029, Block 436, Road 3621, Office 63, Kingdom of bahrain,Seef Area', '97316636669', '97316636669', 'info@promosbh.com', 'https://www.instagram.com/promos.bahrain/?igshid=278lyg1lcmge', 'twitter', 'https://www.facebook.com/Promos.bahrain/', '0097316636669', 'http://www.promosbh.com', 1);
+INSERT INTO `contact` (`id`, `address_ar`, `address_en`, `phone`, `email`, `twitter`, `facebook`, `whats_app`, `instagram`, `website`) VALUES
+(1, 'المنامه البحرين شارع 999', 'Manama Bahrain 999 Street', '98766676655242', 'info@fastclean.com', 'twitter', 'http://facebook.com', '98766676655242', 'instagram', 'http://fastcleanbh.com');
 
 -- --------------------------------------------------------
 
@@ -1008,7 +954,11 @@ INSERT INTO `notifications` (`id`, `text`, `client_id`, `type`, `text_id`, `date
 (19, 'Your order Cancelled', 26, 'order', '19', '2020-08-09 08:19:46'),
 (20, 'Your order Approved', 25, 'order', '17', '2020-08-09 08:19:55'),
 (21, 'Your order under processing', 25, 'order', '17', '2020-08-09 08:20:08'),
-(22, 'Your order has been Delivered', 25, 'order', '17', '2020-08-09 08:20:17');
+(22, 'Your order has been Delivered', 25, 'order', '17', '2020-08-09 08:20:17'),
+(23, 'Your order Approved', 1, 'order', '24', '2020-11-16 14:39:25'),
+(24, 'Your order Cancelled', 1, 'order', '24', '2020-11-16 14:40:14'),
+(25, 'Your order has been Delivered', 1, 'order', '24', '2020-11-16 15:22:09'),
+(26, 'Your order under processing', 1, 'order', '24', '2020-11-16 15:22:23');
 
 -- --------------------------------------------------------
 
@@ -1018,21 +968,20 @@ INSERT INTO `notifications` (`id`, `text`, `client_id`, `type`, `text_id`, `date
 
 CREATE TABLE `orders` (
   `order_id` int(11) NOT NULL,
+  `washer_id` int(11) NOT NULL,
   `cart_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `client_id` int(11) NOT NULL,
   `client_address_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `branch_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `subscription_id` int(11) DEFAULT NULL,
+  `vehicle_id` int(11) DEFAULT NULL,
   `total_price` float NOT NULL,
-  `charge_cost` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `discount_percentage` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `discount_value` float DEFAULT 0,
   `vat` float NOT NULL,
   `vat_percentage` float NOT NULL DEFAULT 0,
-  `net_price` float NOT NULL,
   `order_status` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `order_follow` int(11) NOT NULL,
   `payment` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `deliver_id` int(11) NOT NULL DEFAULT 1,
   `mobile_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `del` int(11) NOT NULL DEFAULT 0,
   `date_del` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -1043,28 +992,31 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`order_id`, `cart_id`, `client_id`, `client_address_id`, `branch_id`, `total_price`, `charge_cost`, `discount_percentage`, `discount_value`, `vat`, `vat_percentage`, `net_price`, `order_status`, `order_follow`, `payment`, `deliver_id`, `mobile_type`, `del`, `date_del`, `date`) VALUES
-(1, '1', 15, '', '2', 1.5, '0', '0', 0, 0, 0, 1.5, '0', 0, 'cash', 3, 'ios', 0, NULL, '2020-07-19 13:07:43'),
-(2, '2', 15, '5', '2', 0.8, '0', '10', 0.08, 0.036, 5, 0.756, '0', 0, 'cash', 1, 'ios', 0, NULL, '2020-07-19 13:28:31'),
-(3, '3,4', 15, '5', '2', 6.4, '1.000', '10', 0.64, 0.288, 5, 7.048, '1', 2, 'cash', 1, 'ios', 0, NULL, '2020-07-19 13:31:51'),
-(4, '6', 15, '', '2', 1.5, '0', '10', 0.15, 0.068, 5, 1.418, '0', 0, 'cash', 2, 'ios', 0, NULL, '2020-07-21 13:51:32'),
-(5, '8', 18, '', '2', 4, '0', '10', 0.4, 0.18, 5, 3.78, '0', 0, 'cash', 2, 'android', 0, NULL, '2020-07-21 17:03:02'),
-(6, '13,21', 18, '6', '2', 3.5, '0', '10', 0.35, 0.158, 5, 3.308, '1', 3, 'cash', 1, 'android', 0, NULL, '2020-07-21 17:23:38'),
-(7, '22', 18, '', '2', 0.8, '0', '10', 0.08, 0.036, 5, 0.756, '0', 0, 'cash', 2, 'android', 0, NULL, '2020-07-21 18:47:47'),
-(8, '24', 18, '', '2', 0.8, '0', '10', 0.08, 0.036, 5, 0.756, '0', 0, 'cash', 2, 'android', 0, NULL, '2020-07-21 18:54:29'),
-(9, '25', 19, '7', '2', 4, '0', '10', 0.4, 0.18, 5, 3.78, '1', 3, 'cash', 1, 'android', 0, NULL, '2020-07-22 22:46:42'),
-(10, '26', 19, '7', '2', 1.5, '0', '10', 0.15, 0.068, 5, 1.418, '0', 0, 'cash', 1, 'android', 0, NULL, '2020-07-22 22:48:15'),
-(11, '27', 19, '', '2', 1.5, '0', '10', 0.15, 0.068, 5, 1.418, '1', 3, 'cash', 2, 'android', 0, NULL, '2020-07-22 22:48:43'),
-(12, '33', 1, '', '2', 1.5, '0', '10', 0.15, 0.0675, 5, 1.418, '0', 0, 'cash', 2, 'Web', 0, NULL, '2020-07-25 18:53:30'),
-(13, '34,36', 1, '', '2', 2.75, '0', '10', 0.275, 0.12375, 5, 2.599, '0', 0, 'cash', 2, 'Web', 0, NULL, '2020-07-25 20:25:36'),
-(14, '34,35,36', 22, '9', '2', 8.75, '1.000', '10', 0.875, 0.39375, 5, 8.269, '0', 0, 'cash', 1, 'Web', 0, NULL, '2020-07-25 20:26:34'),
-(15, '41', 24, '', '2', 2.5, '0', '10', 0.25, 0.113, 5, 2.363, '1', 1, 'cash', 2, 'ios', 0, NULL, '2020-07-26 12:08:42'),
-(16, '42', 24, '', '2', 6, '0', '10', 0.6, 0.27, 5, 5.67, '1', 3, 'cash', 3, 'ios', 0, NULL, '2020-07-26 12:09:16'),
-(17, '44', 25, '', '2', 1.8, '0', '10', 0.18, 0.081, 5, 1.701, '1', 3, 'cash', 2, 'ios', 0, NULL, '2020-07-26 12:14:03'),
-(18, '45,46,47,48', 24, '11', '2', 11.5, '1', '10', 1.15, 0.518, 5, 11.868, '1', 1, 'cash', 1, 'ios', 1, '2020-07-26', '2020-07-26 12:20:48'),
-(19, '61', 26, '13', '2', 10, '0.5', '0', 0, 0.5, 5, 11, '2', 0, 'cash', 1, 'ios', 0, NULL, '2020-08-09 11:18:49'),
-(20, '89', 30, '', '2', 1.5, '0', '0', 0, 0.075, 5, 1.575, '1', 1, 'cash', 2, 'Web', 0, NULL, '2020-09-17 08:58:00'),
-(21, '93', 30, '', '2', 5.4, '0', '0', 0, 0.27, 5, 5.67, '0', 0, 'cash', 2, 'android', 0, NULL, '2020-09-20 15:52:39');
+INSERT INTO `orders` (`order_id`, `washer_id`, `cart_id`, `client_id`, `client_address_id`, `subscription_id`, `vehicle_id`, `total_price`, `discount_percentage`, `discount_value`, `vat`, `vat_percentage`, `order_status`, `order_follow`, `payment`, `mobile_type`, `del`, `date_del`, `date`) VALUES
+(1, 0, '1', 15, '', NULL, NULL, 1.5, '0', 0, 0, 0, '0', 0, 'cash', 'ios', 0, NULL, '2020-07-19 13:07:43'),
+(2, 0, '2', 15, '5', NULL, NULL, 0.8, '10', 0.08, 0.036, 5, '0', 0, 'cash', 'ios', 0, NULL, '2020-07-19 13:28:31'),
+(3, 0, '3,4', 15, '5', NULL, NULL, 6.4, '10', 0.64, 0.288, 5, '1', 2, 'cash', 'ios', 0, NULL, '2020-07-19 13:31:51'),
+(4, 0, '6', 15, '', NULL, NULL, 1.5, '10', 0.15, 0.068, 5, '0', 0, 'cash', 'ios', 0, NULL, '2020-07-21 13:51:32'),
+(5, 0, '8', 18, '', NULL, NULL, 4, '10', 0.4, 0.18, 5, '0', 0, 'cash', 'android', 0, NULL, '2020-07-21 17:03:02'),
+(6, 0, '13,21', 18, '6', NULL, NULL, 3.5, '10', 0.35, 0.158, 5, '1', 3, 'cash', 'android', 1, '2020-11-16', '2020-07-21 17:23:38'),
+(7, 0, '22', 18, '', NULL, NULL, 0.8, '10', 0.08, 0.036, 5, '0', 0, 'cash', 'android', 0, NULL, '2020-07-21 18:47:47'),
+(8, 0, '24', 18, '', NULL, NULL, 0.8, '10', 0.08, 0.036, 5, '0', 0, 'cash', 'android', 0, NULL, '2020-07-21 18:54:29'),
+(9, 0, '25', 19, '7', NULL, NULL, 4, '10', 0.4, 0.18, 5, '1', 3, 'cash', 'android', 1, '2020-11-16', '2020-07-22 22:46:42'),
+(10, 0, '26', 19, '7', NULL, NULL, 1.5, '10', 0.15, 0.068, 5, '0', 0, 'cash', 'android', 0, NULL, '2020-07-22 22:48:15'),
+(11, 0, '27', 19, '', NULL, NULL, 1.5, '10', 0.15, 0.068, 5, '1', 3, 'cash', 'android', 0, NULL, '2020-07-22 22:48:43'),
+(12, 0, '33', 1, '', NULL, NULL, 1.5, '10', 0.15, 0.0675, 5, '0', 0, 'cash', 'Web', 0, NULL, '2020-07-25 18:53:30'),
+(13, 0, '34,36', 1, '', NULL, NULL, 2.75, '10', 0.275, 0.12375, 5, '0', 0, 'cash', 'Web', 0, NULL, '2020-07-25 20:25:36'),
+(14, 0, '34,35,36', 22, '9', NULL, NULL, 8.75, '10', 0.875, 0.39375, 5, '0', 0, 'cash', 'Web', 1, '2020-11-16', '2020-07-25 20:26:34'),
+(15, 0, '41', 24, '', NULL, NULL, 2.5, '10', 0.25, 0.113, 5, '1', 1, 'cash', 'ios', 0, NULL, '2020-07-26 12:08:42'),
+(16, 0, '42', 24, '', NULL, NULL, 6, '10', 0.6, 0.27, 5, '1', 3, 'cash', 'ios', 0, NULL, '2020-07-26 12:09:16'),
+(17, 0, '44', 25, '', NULL, NULL, 1.8, '10', 0.18, 0.081, 5, '1', 3, 'cash', 'ios', 0, NULL, '2020-07-26 12:14:03'),
+(18, 0, '45,46,47,48', 24, '11', NULL, NULL, 11.5, '10', 1.15, 0.518, 5, '1', 1, 'cash', 'ios', 1, '2020-07-26', '2020-07-26 12:20:48'),
+(19, 0, '61', 26, '13', NULL, NULL, 10, '0', 0, 0.5, 5, '2', 0, 'cash', 'ios', 0, NULL, '2020-08-09 11:18:49'),
+(20, 0, '89', 30, '', NULL, NULL, 1.5, '0', 0, 0.075, 5, '1', 1, 'cash', 'Web', 1, '2020-11-16', '2020-09-17 08:58:00'),
+(21, 0, '93', 30, '', NULL, NULL, 5.4, '0', 0, 0.27, 5, '0', 0, 'cash', 'android', 0, NULL, '2020-09-20 15:52:39'),
+(22, 1, '21', 1, '2', 1, 1, 12312, '123', 1, 1, 3123, '0', 0, '1', 'android', 0, NULL, ''),
+(23, 1, '21', 1, '2', 1, 1, 456183, '10', 45618.3, 20528.2, 5, '2', 0, '1', 'ios', 0, NULL, '2020-11-15 16:17:21'),
+(24, 1, '22', 1, '2', 1, 1, 456183, '10', 45618.3, 20528.2, 5, '1', 2, '1', 'ios', 0, NULL, '2020-11-15 18:04:06');
 
 -- --------------------------------------------------------
 
@@ -1175,7 +1127,12 @@ INSERT INTO `order_delete_reason` (`id`, `order_id`, `delete_reason`, `date_adde
 (89, '7', 'test', '2020-07-26 09:07:28'),
 (90, '14', 'test', '2020-07-26 09:07:40'),
 (91, '18', 'test', '2020-07-26 10:12:32'),
-(92, '18', 'test', '2020-07-26 10:29:14');
+(92, '18', 'test', '2020-07-26 10:29:14'),
+(93, '14', 'sfdfsdfsdfsd', '2020-11-16 14:54:08'),
+(94, '14', 'sfdfsdfsdfsdfsdfsdfsdfsd', '2020-11-16 14:54:16'),
+(95, '20', 'sfdfsdfsdfsdfsdfsdfsdfsd', '2020-11-16 14:54:16'),
+(96, '6', 'سيبسيبسيبسي', '2020-11-16 15:37:29'),
+(97, '9', 'بيليبليبليب', '2020-11-16 15:37:35');
 
 -- --------------------------------------------------------
 
@@ -1270,14 +1227,14 @@ CREATE TABLE `payment` (
 
 INSERT INTO `payment` (`id`, `client_id`, `order_id`, `payment_id`, `value`, `result`, `payment_type`, `date`) VALUES
 (12, '1', '1212', 'SESSION0002757526074N81065783H1', 'a92674a6748641bb', '', 'credit', '2020-08-17 15:35:58'),
-(13, '', '21', '', '', 'success', 'credit', '2020-08-17 15:35:58'),
+(13, '', '0', '', '', 'success', 'credit', '2020-08-17 15:35:58'),
 (14, '1', '1212', 'SESSION0002518324156H41811980F1', 'e72d50a6795c4f72', '', 'credit', '2020-08-17 15:39:31'),
 (15, '1', '1212', 'SESSION0002326396922N93507828E5', 'ad2024af1c484314', '', 'credit', '2020-08-17 15:39:34'),
 (16, '1', '1212', 'SESSION0002605888275I20596017J1', '8b21abf3151a4529', '', 'credit', '2020-08-17 15:39:44'),
 (17, '1', '121012', 'SESSION0002552287665H43816280H5', 'e0a395843b1646ee', 'success', 'credit', '2020-08-17 15:39:51'),
 (18, '1', '127712', 'SESSION0002894906087I44998386I0', '0fa3fcdb85d24cc0', 'success', 'credit', '2020-08-17 15:43:14'),
 (19, '1', '121412', 'SESSION0002476966322K03460766E2', '7ba622e1115e43e2', '', 'credit', '2020-08-17 15:45:25'),
-(20, '', '21', '', '', 'success', 'credit', '2020-08-20 00:12:11'),
+(20, '', '0', '', '', 'success', 'credit', '2020-08-20 00:12:11'),
 (21, '1', '8952599098', 'SESSION0002832956802L5285391L25', 'bd1eab339cf04127', '', 'credit', '2020-09-16 00:39:59'),
 (22, '1', '8952599098', 'SESSION0002466272397M9909746N30', 'adb8ceac4c8f46e7', '', 'credit', '2020-09-16 00:41:21'),
 (23, '1', '7893725876', 'SESSION0002402881128G9413453L94', '0d1f47d663694ab1', '', 'credit', '2020-09-16 00:46:27'),
@@ -1288,55 +1245,55 @@ INSERT INTO `payment` (`id`, `client_id`, `order_id`, `payment_id`, `value`, `re
 (28, '15', 'uWeJAiuK', 'SESSION0002237097520G3624777E29', 'dd7111ba626445bf', '', 'credit', '2020-09-16 15:05:36'),
 (29, '15', 'kxNazK07', 'SESSION0002158769661E5504930G68', '4754b3df07c345c5', '', 'credit', '2020-09-16 15:25:26'),
 (30, '15', '4hcCNTD6', 'SESSION0002628864637F1823490I79', 'd723e739579a4275', '', 'credit', '2020-09-16 15:27:31'),
-(31, '1', '21', '', '', '', 'credit', '2020-09-16 16:47:29'),
-(32, '1', '21', '', '', '', 'credit', '2020-09-16 16:49:29'),
-(33, '1', '21', '', '', '', 'credit', '2020-09-16 16:49:53'),
-(34, '1', '21', '', '', '', 'credit', '2020-09-16 16:50:50'),
-(35, '1', '21', '', '', '', 'credit', '2020-09-16 16:52:17'),
-(36, '15', '21', '', '', '', 'credit', '2020-09-16 17:00:33'),
-(37, '15', '21', '', '', '', 'credit', '2020-09-16 17:02:09'),
-(38, '15', '21', '', '', '', 'credit', '2020-09-16 17:03:46'),
-(39, '1', '21', '', '', '', 'credit', '2020-09-16 17:06:39'),
-(40, '1', '21', '', '', '', 'credit', '2020-09-16 17:18:00'),
-(41, '1', '21', '', '', '', 'credit', '2020-09-16 18:10:12'),
-(42, '15', '21', '', '', '', 'credit', '2020-09-17 16:07:26'),
-(43, '15', '21', '', '', '', 'credit', '2020-09-17 16:08:46'),
-(44, '15', '21', '', '', '', 'credit', '2020-09-17 16:08:58'),
-(45, '15', '21', '', '', '', 'credit', '2020-09-17 16:09:00'),
-(46, '15', '21', '', '', '', 'credit', '2020-09-17 16:09:42'),
-(47, '15', '21', '', '', '', 'credit', '2020-09-17 16:10:35'),
-(48, '15', '21', '', '', '', 'credit', '2020-09-17 16:10:47'),
-(49, '15', '21', '', '', '', 'credit', '2020-09-17 16:10:55'),
-(50, '15', '21', '', '', '', 'credit', '2020-09-17 16:11:19'),
-(51, '15', '21', '', '', '', 'credit', '2020-09-17 16:11:29'),
-(52, '15', '21', '', '', '', 'credit', '2020-09-17 16:11:50'),
-(53, '15', '21', '', '', '', 'credit', '2020-09-17 16:12:14'),
-(54, '15', '21', '', '', '', 'credit', '2020-09-17 16:13:26'),
-(55, '15', '21', '', '', '', 'credit', '2020-09-17 16:13:39'),
-(56, '15', '21', '', '', '', 'credit', '2020-09-17 16:14:28'),
-(57, '15', '21', '', '', '', 'credit', '2020-09-17 16:14:36'),
-(58, '15', '21', '', '', '', 'credit', '2020-09-17 16:14:39'),
-(59, '15', '21', '', '', '', 'credit', '2020-09-17 16:14:41'),
-(60, '15', '21', '', '', '', 'credit', '2020-09-17 16:15:04'),
-(61, '15', '21', '', '', '', 'credit', '2020-09-17 16:15:07'),
-(62, '15', '21', '', '', 'success', 'credit', '2020-09-17 16:15:30'),
-(63, '15', '21', '', '', 'success', 'credit', '2020-09-17 16:15:52'),
-(64, '15', '21', '', '', '', 'credit', '2020-09-17 16:16:05'),
-(65, '15', '21', '', '', '', 'credit', '2020-09-17 16:16:15'),
-(66, '15', '21', '', '', '', 'credit', '2020-09-17 16:16:33'),
-(67, '15', '21', '', '', '', 'credit', '2020-09-17 16:16:59'),
-(68, '15', '21', '', '', '', 'credit', '2020-09-17 16:17:25'),
-(69, '15', '21', '', '', '', 'credit', '2020-09-17 16:17:36'),
-(70, '15', '21', '', '', '', 'credit', '2020-09-17 16:17:47'),
-(71, '15', '21', '', '', '', 'credit', '2020-09-17 16:18:33'),
-(72, '15', '21', '', '', '', 'credit', '2020-09-17 16:20:51'),
-(73, '15', '21', '', '', '', 'credit', '2020-09-17 16:20:55'),
-(74, '15', '21', '', '', '', 'credit', '2020-09-17 16:21:52'),
-(75, '15', '21', '', '', '', 'credit', '2020-09-17 16:22:06'),
-(76, '15', '21', '', '', '', 'credit', '2020-09-17 16:22:31'),
-(77, '15', '21', '', '', '', 'credit', '2020-09-17 16:22:41'),
-(78, '15', '21', '', '', '', 'credit', '2020-09-17 16:23:59'),
-(79, '', '21', '', '', '', 'credit', '2020-09-19 12:28:50');
+(31, '1', '0', '', '', '', 'credit', '2020-09-16 16:47:29'),
+(32, '1', '0', '', '', '', 'credit', '2020-09-16 16:49:29'),
+(33, '1', '0', '', '', '', 'credit', '2020-09-16 16:49:53'),
+(34, '1', '0', '', '', '', 'credit', '2020-09-16 16:50:50'),
+(35, '1', '0', '', '', '', 'credit', '2020-09-16 16:52:17'),
+(36, '15', '0', '', '', '', 'credit', '2020-09-16 17:00:33'),
+(37, '15', '0', '', '', '', 'credit', '2020-09-16 17:02:09'),
+(38, '15', '0', '', '', '', 'credit', '2020-09-16 17:03:46'),
+(39, '1', '0', '', '', '', 'credit', '2020-09-16 17:06:39'),
+(40, '1', '0', '', '', '', 'credit', '2020-09-16 17:18:00'),
+(41, '1', '0', '', '', '', 'credit', '2020-09-16 18:10:12'),
+(42, '15', '0', '', '', '', 'credit', '2020-09-17 16:07:26'),
+(43, '15', '0', '', '', '', 'credit', '2020-09-17 16:08:46'),
+(44, '15', '0', '', '', '', 'credit', '2020-09-17 16:08:58'),
+(45, '15', '0', '', '', '', 'credit', '2020-09-17 16:09:00'),
+(46, '15', '0', '', '', '', 'credit', '2020-09-17 16:09:42'),
+(47, '15', '0', '', '', '', 'credit', '2020-09-17 16:10:35'),
+(48, '15', '0', '', '', '', 'credit', '2020-09-17 16:10:47'),
+(49, '15', '0', '', '', '', 'credit', '2020-09-17 16:10:55'),
+(50, '15', '0', '', '', '', 'credit', '2020-09-17 16:11:19'),
+(51, '15', '0', '', '', '', 'credit', '2020-09-17 16:11:29'),
+(52, '15', '0', '', '', '', 'credit', '2020-09-17 16:11:50'),
+(53, '15', '0', '', '', '', 'credit', '2020-09-17 16:12:14'),
+(54, '15', '0', '', '', '', 'credit', '2020-09-17 16:13:26'),
+(55, '15', '0', '', '', '', 'credit', '2020-09-17 16:13:39'),
+(56, '15', '0', '', '', '', 'credit', '2020-09-17 16:14:28'),
+(57, '15', '0', '', '', '', 'credit', '2020-09-17 16:14:36'),
+(58, '15', '0', '', '', '', 'credit', '2020-09-17 16:14:39'),
+(59, '15', '0', '', '', '', 'credit', '2020-09-17 16:14:41'),
+(60, '15', '0', '', '', '', 'credit', '2020-09-17 16:15:04'),
+(61, '15', '0', '', '', '', 'credit', '2020-09-17 16:15:07'),
+(62, '15', '0', '', '', 'success', 'credit', '2020-09-17 16:15:30'),
+(63, '15', '0', '', '', 'success', 'credit', '2020-09-17 16:15:52'),
+(64, '15', '0', '', '', '', 'credit', '2020-09-17 16:16:05'),
+(65, '15', '0', '', '', '', 'credit', '2020-09-17 16:16:15'),
+(66, '15', '0', '', '', '', 'credit', '2020-09-17 16:16:33'),
+(67, '15', '0', '', '', '', 'credit', '2020-09-17 16:16:59'),
+(68, '15', '0', '', '', '', 'credit', '2020-09-17 16:17:25'),
+(69, '15', '0', '', '', '', 'credit', '2020-09-17 16:17:36'),
+(70, '15', '0', '', '', '', 'credit', '2020-09-17 16:17:47'),
+(71, '15', '0', '', '', '', 'credit', '2020-09-17 16:18:33'),
+(72, '15', '0', '', '', '', 'credit', '2020-09-17 16:20:51'),
+(73, '15', '0', '', '', '', 'credit', '2020-09-17 16:20:55'),
+(74, '15', '0', '', '', '', 'credit', '2020-09-17 16:21:52'),
+(75, '15', '0', '', '', '', 'credit', '2020-09-17 16:22:06'),
+(76, '15', '0', '', '', '', 'credit', '2020-09-17 16:22:31'),
+(77, '15', '0', '', '', '', 'credit', '2020-09-17 16:22:41'),
+(78, '15', '0', '', '', '', 'credit', '2020-09-17 16:23:59'),
+(79, '', '0', '', '', '', 'credit', '2020-09-19 12:28:50');
 
 -- --------------------------------------------------------
 
@@ -1519,8 +1476,7 @@ INSERT INTO `services` (`service_id`, `washer_id`, `service_name_en`, `service_n
 (2, 1, 'burnish', 'تلميع', 20, 1, '2020-11-01 10:20:07'),
 (3, 1, 'Polish', 'بوليش', 20, 1, '2020-11-01 10:20:07'),
 (4, 1, 'Thorough cleaning', 'تنظيف شامل', 20, 1, '2020-11-01 10:20:07'),
-(5, 1, 'Engine cleaning', 'تنظيف المحرك', 456123, 1, '2020-11-01 10:20:07'),
-(7, 3, 'Rhea Blackwell', 'Brock Schmidt', 1000, 0, '2020-11-04 11:21:05');
+(5, 1, 'Engine cleaning', 'تنظيف المحرك', 456123, 1, '2020-11-01 10:20:07');
 
 -- --------------------------------------------------------
 
@@ -1530,21 +1486,24 @@ INSERT INTO `services` (`service_id`, `washer_id`, `service_name_en`, `service_n
 
 CREATE TABLE `setting` (
   `id` int(11) NOT NULL,
+  `accept_orders` int(11) NOT NULL,
+  `discount` int(11) NOT NULL,
+  `discount_percentage` int(255) NOT NULL,
+  `vat` int(11) NOT NULL,
   `android_version` varchar(255) NOT NULL,
   `ios_version` varchar(255) NOT NULL,
   `ios_link` varchar(255) NOT NULL,
+  `android_link` varchar(255) NOT NULL,
   `footer_caption` text CHARACTER SET utf8 NOT NULL,
-  `footer_caption_en` text CHARACTER SET utf8 NOT NULL,
-  `lang` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `let` varchar(255) CHARACTER SET utf8 DEFAULT NULL
+  `footer_caption_en` text CHARACTER SET utf8 NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `setting`
 --
 
-INSERT INTO `setting` (`id`, `android_version`, `ios_version`, `ios_link`, `footer_caption`, `footer_caption_en`, `lang`, `let`) VALUES
-(1, '3456', '5759', '8990', '© حقوق الطبع والنشر © 2020 جميع الحقوق محفوظة Promo', '© Copyright © 2020 All Right Reserved by Promo', '50.5297815', '26.2362237');
+INSERT INTO `setting` (`id`, `accept_orders`, `discount`, `discount_percentage`, `vat`, `android_version`, `ios_version`, `ios_link`, `android_link`, `footer_caption`, `footer_caption_en`) VALUES
+(1, 1, 1, 10, 5, '1.0', '1.0', '#', '#', 'جميع الحقوق محفوظة ل فاست كلين 2020', 'All Copy Rights Reserved To Fast Clean 2020');
 
 -- --------------------------------------------------------
 
@@ -1565,18 +1524,6 @@ CREATE TABLE `slider` (
 
 INSERT INTO `slider` (`id`, `image`, `link`, `date_added`) VALUES
 (1, 'http://fastcleanbh.com/system/api/uploads/slider/1/colorful-beach-view-wallpaper-10917_L.jpg', 'Libero dolorum qui q 123', '2020-10-27 16:07:09');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `subscriptions`
---
-
-CREATE TABLE `subscriptions` (
-  `id` int(11) NOT NULL,
-  `email` varchar(255) COLLATE latin1_general_ci NOT NULL,
-  `date_added` date NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
 
@@ -1657,6 +1604,14 @@ CREATE TABLE `sub_categories_addition_prices` (
   `parent_category_id` int(11) NOT NULL,
   `date` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `sub_categories_addition_prices`
+--
+
+INSERT INTO `sub_categories_addition_prices` (`sub_category_addition_price_id`, `sub_category_addition_name`, `sub_category_addition_name_ar`, `sub_category_addition_price`, `parent_category_id`, `date`) VALUES
+(28, 'dsadsadsa', 'dsadsadsa', '120', 21, ''),
+(29, 'dsadsadsa', 'dsadsadsa', '120', 21, '');
 
 -- --------------------------------------------------------
 
@@ -2115,9 +2070,7 @@ CREATE TABLE `washers` (
 --
 
 INSERT INTO `washers` (`washer_id`, `category_id`, `washer_name_en`, `washer_name_ar`, `washer_desc_en`, `washer_desc_ar`, `washer_image`, `display`, `date`) VALUES
-(1, 1, 'East Laundry', 'مغسلة الشرق', 'All car wash supplies, direct bright polishing and workshops under one roof', 'كل مستلزمات مغاسل السيارات التلميع الساطع المباشر والورش تحت سقف واحد ', 'http://fastcleanbh.com/system/api/uploads/Washers/1/2018_6_5_14_59_28_727.jpg\r\n', 1, '2020-11-01 12:20:07'),
-(2, 1, 'Colette Avila', 'Meghan Francis', 'Maxime doloremque quasi ullam lorem sit ipsum velit odio veritatis dolores ipsa beatae repudiandae consectetur', 'Velit quisquam tempora veritatis at pariatur Nobis ut sed esse tempore et temporibus molestiae labore omnis repudiandae maiores', 'http://fastcleanbh.com/system/api/uploads/Washers/2/about-us.jpg', 1, '2020-11-04 13:20:06'),
-(3, 3, 'Sophia Burt', 'Joy Holt', 'Ipsum itaque quod sed ducimus quia lorem', 'Sunt ut qui saepe qui minus qui eum sunt nulla aute cupiditate voluptas dolor ut error quis a aut repudiandae', 'http://fastcleanbh.com/system/api/uploads/Washers/3/bahrain manama-2.jpg', 1, '2020-11-04 13:21:05');
+(1, 1, 'East Laundry', 'مغسلة الشرق', 'All car wash supplies, direct bright polishing and workshops under one roof', 'كل مستلزمات مغاسل السيارات التلميع الساطع المباشر والورش تحت سقف واحد ', 'http://fastcleanbh.com/system/api/uploads/Washers/1/2018_6_5_14_59_28_727.jpg\r\n', 1, '2020-11-01 12:20:07');
 
 -- --------------------------------------------------------
 
@@ -2152,10 +2105,10 @@ CREATE TABLE `washer_contact` (
   `id` int(11) NOT NULL,
   `washer_id` int(11) NOT NULL,
   `phone` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `whats_app` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `mobile` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
   `facebook` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
   `instagram` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `twitter` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `snapchat` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
   `date` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -2163,8 +2116,8 @@ CREATE TABLE `washer_contact` (
 -- Dumping data for table `washer_contact`
 --
 
-INSERT INTO `washer_contact` (`id`, `washer_id`, `phone`, `whats_app`, `facebook`, `instagram`, `twitter`, `date`) VALUES
-(1, 1, '999 888884', '999 888884', 'www.facebook.com', 'www.instagram.com', 'www.twitter.com', '2020-11-02 15:46:24');
+INSERT INTO `washer_contact` (`id`, `washer_id`, `phone`, `mobile`, `facebook`, `instagram`, `snapchat`, `date`) VALUES
+(1, 1, '999 888884', '999 888884', 'www.facebook.com', 'www.instagram.com', 'www.snapchat.com', '2020-11-02 15:46:24');
 
 -- --------------------------------------------------------
 
@@ -2200,10 +2153,8 @@ INSERT INTO `washer_images` (`id`, `washer_id`, `image`, `date_added`) VALUES
 CREATE TABLE `work_time` (
   `id` int(11) NOT NULL,
   `washer_id` int(11) NOT NULL,
-  `day_en` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `day_ar` text CHARACTER SET utf8mb4 DEFAULT NULL,
-  `from` time DEFAULT NULL,
-  `to` time DEFAULT NULL,
+  `day` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `time` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `date` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -2211,14 +2162,14 @@ CREATE TABLE `work_time` (
 -- Dumping data for table `work_time`
 --
 
-INSERT INTO `work_time` (`id`, `washer_id`, `day_en`, `day_ar`, `from`, `to`, `date`) VALUES
-(1, 1, 'Saturday ', 'السبت', '11:00:00', '21:00:00', '2020-11-03 10:57:06'),
-(2, 1, 'Sunday', 'الاحد', '11:00:00', '21:00:00', '2020-11-03 10:57:26'),
-(3, 1, 'monday', 'الاثنين', '11:00:00', '21:00:00', '2020-11-03 10:57:55'),
-(4, 1, 'Tuesday', 'الثلاثاء', '11:00:00', '21:00:00', '2020-11-03 10:58:33'),
-(5, 1, 'Wednesday', 'الاربعاء', '11:00:00', '21:00:00', '2020-11-03 10:58:52'),
-(6, 1, 'Thursday', 'الخميس', '11:00:00', '21:00:00', '2020-11-03 10:59:15'),
-(7, 1, 'Friday', 'الجمعه', '11:00:00', '00:00:00', '2020-11-03 10:59:33');
+INSERT INTO `work_time` (`id`, `washer_id`, `day`, `time`, `date`) VALUES
+(1, 1, 'Saturday ', '21:00:00', '2020-11-03 10:57:06'),
+(2, 1, 'Sunday', '21:00:00', '2020-11-03 10:57:26'),
+(3, 1, 'monday', '21:00:00', '2020-11-03 10:57:55'),
+(4, 1, 'Tuesday', '21:00:00', '2020-11-03 10:58:33'),
+(5, 1, 'Wednesday', '21:00:00', '2020-11-03 10:58:52'),
+(6, 1, 'Thursday', '21:00:00', '2020-11-03 10:59:15'),
+(7, 1, 'Friday', '00:00:00', '2020-11-03 10:59:33');
 
 --
 -- Indexes for dumped tables
@@ -2435,12 +2386,6 @@ ALTER TABLE `slider`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `subscriptions`
---
-ALTER TABLE `subscriptions`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `subscription_type`
 --
 ALTER TABLE `subscription_type`
@@ -2556,7 +2501,7 @@ ALTER TABLE `branches_regions`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -2574,7 +2519,7 @@ ALTER TABLE `clients`
 -- AUTO_INCREMENT for table `client_addresses`
 --
 ALTER TABLE `client_addresses`
-  MODIFY `client_address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `client_address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `client_fav`
@@ -2586,7 +2531,7 @@ ALTER TABLE `client_fav`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `complaints`
@@ -2664,19 +2609,19 @@ ALTER TABLE `most_request_sub`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `order_delete_reason`
 --
 ALTER TABLE `order_delete_reason`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 
 --
 -- AUTO_INCREMENT for table `our_team`
@@ -2718,19 +2663,13 @@ ALTER TABLE `removes`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `subscriptions`
---
-ALTER TABLE `subscriptions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `subscription_type`
@@ -2748,7 +2687,7 @@ ALTER TABLE `sub_categories`
 -- AUTO_INCREMENT for table `sub_categories_addition_prices`
 --
 ALTER TABLE `sub_categories_addition_prices`
-  MODIFY `sub_category_addition_price_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `sub_category_addition_price_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `testimonial`
@@ -2766,31 +2705,31 @@ ALTER TABLE `vehicle_type`
 -- AUTO_INCREMENT for table `washers`
 --
 ALTER TABLE `washers`
-  MODIFY `washer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `washer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `washer_address`
 --
 ALTER TABLE `washer_address`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `washer_contact`
 --
 ALTER TABLE `washer_contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `washer_images`
 --
 ALTER TABLE `washer_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
 -- AUTO_INCREMENT for table `work_time`
 --
 ALTER TABLE `work_time`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

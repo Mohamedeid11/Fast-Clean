@@ -27,13 +27,13 @@ mysql_query("SET NAMES 'utf8'");
 	$result = mysql_query("DELETE FROM `cart` WHERE `cart_id`='$cart_id'");
 
 
-    $response["product"] = array(); 
-
-	// temp user array
-	$product = array();
-	
-	// push single product into final response array
-	array_push($response["product"], $product);
+//    $response["product"] = array();
+//
+//	// temp user array
+//	$product = array();
+//
+//	// push single product into final response array
+//	array_push($response["product"], $product);
     
 	
     // check if row inserted or not

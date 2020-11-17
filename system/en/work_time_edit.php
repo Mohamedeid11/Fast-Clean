@@ -33,10 +33,8 @@ if (!loggedin()) {
 
         $work_timeID_update = $_POST['work_timeID_update'];
         $washer_id = $_POST['washer_id_update'];
-        $day_en = $_POST['day_en'];
-        $day_ar = $_POST['day_ar'];
-        $from = $_POST['from'];
-        $to = $_POST['to'];
+        $day = $_POST['day'];
+        $time = $_POST['time'];
         $errors = array();
 
         if (!empty($errors)) {
@@ -46,7 +44,7 @@ if (!loggedin()) {
             }
         }
         else {
-            $update = $con->query("UPDATE `work_time` SET `washer_id`='$washer_id' ,`day_en`='$day_en',`day_ar`='$day_ar' , `from`='$from',`to`='$to' WHERE `id`='$work_timeID_update'");
+            $update = $con->query("UPDATE `work_time` SET `washer_id`='$washer_id' ,`day`='$day',`time`='$time' WHERE `id`='$work_timeID_update'");
 
             echo get_success("Successfully Updated");
             echo "<meta http-equiv='refresh' content='0'>";
@@ -84,10 +82,8 @@ if (!loggedin()) {
 
                     $id = $row_select['id'];
                     $washer_id = $row_select['washer_id'];
-                    $day_en = $row_select['day_en'];
-                    $day_ar= $row_select['day_ar'];
-                    $from = $row_select['from'];
-                    $to = $row_select['to'];
+                    $day = $row_select['day'];
+                    $time = $row_select['time'];
 
 
                     if ($query_select) {
@@ -120,20 +116,12 @@ if (!loggedin()) {
                                             </div>
 
                                             <div class="form-group  col-md-5">
-                                                <label for="sub_cat_desc"><?=lang('day_en')?></label>
-                                                <input type="text" class="form-control" rows="3" name="day_en"  minlength="3" maxlength="1000" value="<?= $day_en ;?>">
-                                            </div>
-                                            <div class="form-group  col-md-5">
-                                                <label for="sub_cat_desc"><?=lang('day_ar')?></label>
-                                                <input type="text" class="form-control" rows="3" name="day_ar"  minlength="3" maxlength="1000" value="<?= $day_ar ;?>">
+                                                <label for="sub_cat_desc"><?=lang('day')?></label>
+                                                <input type="text" class="form-control" rows="3" name="day"  minlength="3" maxlength="1000" value="<?= $day ;?>">
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="sub_cat_desc"><?=lang('from')?></label>
-                                                <input type="time" class="form-control" rows="3" name="from"  minlength="3" maxlength="1000" value="<?= $from ;?>">
-                                            </div>
-                                            <div class="form-group col-md-5">
-                                                <label for="sub_cat_desc"><?=lang('to')?></label>
-                                                <input type="time" class="form-control" rows="3" name="to"  minlength="3" maxlength="1000" value="<?= $to ;?>">
+                                                <label for="sub_cat_desc"><?=lang('time')?></label>
+                                                <input type="text" class="form-control" rows="3" name="time"  minlength="3" maxlength="1000" value="<?= $time ;?>">
                                             </div>
                                             <div class="clearfix"></div>
 

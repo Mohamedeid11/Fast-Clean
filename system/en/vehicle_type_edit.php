@@ -89,11 +89,11 @@ if (isset($_POST['vehicle_update'])) {
                                                 <input type="hidden" name="vehicle_id_update" id="vehicle_id_update" parsley-trigger="change" required value="<?php echo $id; ?>" class="form-control">
 
                                                 <div class="form-group m-b-3">
-                                                    <label for="parent_cat_name"> <?=lang('category_name_en')?> </label>
+                                                    <label for="parent_cat_name"> <?=lang('name_english')?> </label>
                                                     <input type="text" name="name_en" id="name_en" parsley-trigger="change"  value="<?php echo $vehicle_name_en; ?>" class="form-control">
                                                 </div>
                                                 <div class="form-group m-b-3">
-                                                    <label for="parent_cat_name_ar"> <?=lang('category_name_ar')?> </label>
+                                                    <label for="parent_cat_name_ar"> <?=lang('name_arabic')?> </label>
                                                     <input type="text" name="name_ar" id="name_ar" parsley-trigger="change"  value="<?php echo $vehicle_name_ar; ?>" class="form-control">
                                                 </div>
 

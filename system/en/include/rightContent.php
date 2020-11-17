@@ -15,69 +15,91 @@
                             <div class="col-md-3 col-lg-3 col-xl-3">
                                 <div class="price_card text-center">
                                     <div class="pricing-header bg-success" style="background-color:#967041 !important;">
-                                        <span class="name"> <i class="fa fa-slideshare"></i> Slider</span>
+                                        <span class="name"> <i class="fa fa-slideshare"></i> <?= lang('slider')?></span>
                                     </div>
                                     <ul class="price-features">
-                                        <li><a href="slider_add.php"><span>Add New Slider</span></a></li>
-                                        <li><a href="slider_view.php"><span>View All </span></a></li>
+                                        <li><a href="slider_add.php"><span><?= lang('add_new_slider')?></span></a></li>
+                                        <li><a href="slider_view.php"><span><?= lang('view_all')?> </span></a></li>
                                     </ul>
                                 </div>
                             </div>
 
-<!--                            <div class="col-md-3 col-lg-3 col-xl-3">-->
-<!--                                <div class="price_card text-center">-->
-<!--                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">-->
-<!--                                        <span class="name"> <i class="fa fa-building"></i> Projects </span>-->
-<!--                                    </div>-->
-<!--                                    <ul class="price-features">-->
-<!--                                        <li><a href="projects_add.php"><span>Add New Project</span></a></li>-->
-<!--                                        <li><a href="projects_view.php"><span>View All </span></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="price_card text-center">
+                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">
+                                        <span class="name"> <i class="fa fa-building"></i><?= lang('category')?></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><a href="category_add.php"><span><?= lang('add_new_category') ?></span></a></li>
+                                        <li><a href="category_view.php"><span><?= lang('view_all')?></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="price_card text-center">
+                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">
+                                        <span class="name"> <i class="fa fa-info"></i> <?= lang('washers')?></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><a href="washer_add.php"><span><?= lang('add_new_washer')?></span></a></li>
+                                        <li><a href="washer_view.php"><span><?= lang('view_all_washer')?></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="price_card text-center">
+                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">
+                                        <span class="name"> <i class="fa fa-info"></i> <?= lang('vehicle_type')?></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><a href="vehicle_type_add.php"><span><?= lang('add_new_vehicle')?> </span></a></li>
+                                        <li><a href="vehicle_type_view.php"><span><?= lang('view_all')?></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="price_card text-center">
+                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">
+                                        <span class="name"> <i class="fa fa-info"></i> <?= lang('subscription')?></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><a href="subscription_type_add.php"><span><?= lang('add_new_subscription')?> </span></a></li>
+                                        <li><a href="subscription_type_view.php"><span><?= lang('view_all')?></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
                         <?php } ?>
 
 
 
 <!--                        --><?php //if ($_SESSION['orders'] == '1') { ?>
-                                <div class="col-md-3 col-lg-3 col-xl-3">
-                                    <div class="price_card text-center">
-                                        <div class="pricing-header bg-success" style="background-color:#967041 !important;">
-                                            <span class="name"> <i class="fa fa-users"></i> Clients</span>
-                                        </div>
-                                        <ul class="price-features">
-                                            <li><a href="client_add.php"><span>Add New Client</span></a></li>
-                                            <li><a href="client_view.php"><span>View All </span></a></li>
-                                        </ul>
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="price_card text-center">
+                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">
+                                        <span class="name"> <i class="fa fa-cart-arrow-down"></i> <?= lang('orders')?></span>
                                     </div>
+                                    <ul class="price-features">
+<!--                                        <li><a href="order_add.php"><span>Add New Order </span></a></li>-->
+                                        <li><a href="order_view.php"><span><?= lang('current_orders')?></span></a></li>
+                                        <li><a href="last_orders.php"><span><?= lang('last_orders')?> </span></a></li>
+                                        <li><a href="payment_methods_view.php"><span><?= lang('payment_methods')?></span></a></li>
+                                    </ul>
                                 </div>
-<!---->
-<!--                            <div class="col-md-3 col-lg-3 col-xl-3">-->
-<!--                                <div class="price_card text-center">-->
-<!--                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">-->
-<!--                                        <span class="name"> <i class="fa fa-cart-arrow-down"></i> Orders</span>-->
-<!--                                    </div>-->
-<!--                                    <ul class="price-features">-->
-<!--                                        <li><a href="order_add.php"><span>Add New Order  </span></a></li>-->
-<!--                                        <li><a href="order_view.php"><span>Current Orders  </span></a></li>-->
-<!--                                        <li><a href="last_orders.php"><span>Last Orders  </span></a></li>-->
-<!--                                        <li><a href="payment.php"><span>Payment</span></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
+                            </div>
 <!--                        --><?php //} ?>
                         <?php if ($_SESSION['clients'] == '1') { ?>
-
-<!---->
 <!--                            <div class="col-md-3 col-lg-3 col-xl-3">-->
 <!--                                <div class="price_card text-center">-->
 <!--                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">-->
-<!--                                        <span class="name"> <i class="fa fa-info"></i> About Project</span>-->
+<!--                                        <span class="name"> <i class="fa fa-credit-card"></i>--><?//= lang('payment_methods')?><!--</span>-->
 <!--                                    </div>-->
 <!--                                    <ul class="price-features">-->
-<!--                                        <li><a href="about_project_add.php"><span>Add New About Project</span></a></li>-->
-<!--                                        <li><a href="about_project_view.php"><span>View All </span></a></li>-->
+<!--                                        <li><a href="payment_methods_view.php"><span>--><?//= lang('payment_methods')?><!--</span></a></li>-->
 <!--                                    </ul>-->
 <!--                                </div>-->
 <!--                            </div>-->
@@ -163,27 +185,50 @@
                             <div class="col-md-3 col-lg-3 col-xl-3">
                                 <div class="price_card text-center">
                                     <div class="pricing-header bg-success" style="background-color:#967041 !important;">
-                                        <span class="name"> <i class="fa fa-info"></i> About</span>
+                                        <span class="name"> <i class="fa fa-users"></i> <?= lang('clients')?></span>
                                     </div>
                                     <ul class="price-features">
-                                        <li><a href="about_edit.php?id=1"><span>About <?=lang('fast_clean')?>
-                                                </span></a></li>
-                                        <li><a href="contact_edit.php"><span>Call Us</span></a></li>
-                                        <li><a href="setting_edit.php"><span>Setting</span></a></li>
+                                        <li><a href="client_add.php"><span><?= lang('add_new_clients')?></span></a></li>
+                                        <li><a href="client_view.php"><span><?= lang('view_all')?></span></a></li>
                                     </ul>
                                 </div>
                             </div>
+
                             <div class="col-md-3 col-lg-3 col-xl-3">
                                 <div class="price_card text-center">
                                     <div class="pricing-header bg-success" style="background-color:#967041 !important;">
-                                        <span class="name"> <i class="fa fa-user"></i> Users</span>
+                                        <span class="name"> <i class="fa fa-info"></i><?= lang('comments_rates')?></span>
                                     </div>
                                     <ul class="price-features">
-                                        <li><a href="user_add.php"><span>Add New User</span></a></li>
-                                        <li><a href="users_view.php"><span>View All</span></a></li>
+                                        <li><a href="comments_view.php"><span><?= lang('comments_rates')?></span></a></li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="price_card text-center">
+                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">
+                                        <span class="name"> <i class="fa fa-info"></i> <?= lang('about_us')?></span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><a href="about_edit.php?id=1"><span><?=lang('about_fastclean')?></span></a></li>
+                                        <li><a href="contact_edit.php"><span><?= lang('contact_us')?></span></a></li>
+                                        <li><a href="setting_edit.php"><span><?=lang('settings')?></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+<!--                            <div class="col-md-3 col-lg-3 col-xl-3">-->
+<!--                                <div class="price_card text-center">-->
+<!--                                    <div class="pricing-header bg-success" style="background-color:#967041 !important;">-->
+<!--                                        <span class="name"> <i class="fa fa-user"></i> Users</span>-->
+<!--                                    </div>-->
+<!--                                    <ul class="price-features">-->
+<!--                                        <li><a href="user_add.php"><span>Add New User</span></a></li>-->
+<!--                                        <li><a href="users_view.php"><span>View All</span></a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         <?php } ?>
 <!--                        --><?php //if ($_SESSION['reports'] == '1') { ?>
 <!---->

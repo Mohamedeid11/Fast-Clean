@@ -24,7 +24,7 @@ $db = new DB_CONNECT();
 
     $comment_id = $_GET['comment_id'];	
 	
-	$result = mysql_query("DELETE FROM `sub_category_comments` WHERE `comment_id`='$comment_id'");
+	$result = mysql_query("DELETE FROM `comments` WHERE `comment_id`='$comment_id'");
 
 
     $response["product"] = array(); 
@@ -40,7 +40,7 @@ $db = new DB_CONNECT();
     if ($result) {
         // successfully inserted into database
         $response["success"] = 1;
-        $response["message"] = "تم إضافة التعليق بنجاح !";
+        $response["message"] = "تم حذف التعليق بنجاح !";
  
         // echoing JSON response
         echo json_encode($response);

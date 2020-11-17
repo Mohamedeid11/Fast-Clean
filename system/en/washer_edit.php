@@ -144,7 +144,7 @@ if (isset($_POST['washer_update'])) {
                                         <input type="hidden" name="washer_id_update" id="washer_id_update" parsley-trigger="change"  value="<?= $washer_id; ?>" class="form-control">
 
                                         <div class="form-group col-md-3">
-                                            <label for="parent_category_id_update"><?=lang('washer_type')?></label>
+                                            <label for="parent_category_id_update"><?=lang('category')?></label>
                                             <select class="form-control select2me" name="washer_type_id_update" id="washer_type_id_update" required parsley-trigger="change">
                                                 <option value="" ><?=lang('choose')?></option>
                                                 <?php

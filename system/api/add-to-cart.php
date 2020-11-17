@@ -30,34 +30,39 @@ $postdata = file_get_contents("php://input");
 if (isset($postdata) && !empty($postdata)) {
     $Req = json_decode($postdata, TRUE);
     $lang = $Req['lang'];
-    $remove_id = $Req['remove_id'];
+//    $remove_id = $Req['remove_id'];
 
     $note = $Req['note'];
-    $sub_category_id = $Req['sub_category_id'];
-    $size_id = $Req['size_id'];
-    $addition_id = $Req['addition_id'];
+    $washer_id = $Req['washer_id'];
+    $vehicle_id = $Req['vehicle_id'];
+    $subscription_id = $Req['subscription_id'];
+    $service_id = $Req['service_id'];
+    $subscription_type = $Req['subscription_type'];
+    $order_date = $Req['order_date'];
+    $order_time = $Req['order_time'];
 
-    $quantity = $Req['quantity'];
-    $get_size_price = get_size_price_from_id($size_id);
-    $addition_price = 0;
+//    $quantity = $Req['quantity'];
+//    $get_service_price = get_service_price_from_id($service_id);
+//    $services_price = 0;
 
 
-    if ($addition_id != '') {
-        $addition_id_all = explode(',', $addition_id);
-        foreach ($addition_id_all as $one) {
-            $get_addition_price = get_addition_price_from_id($one);
-            $addition_price += $get_addition_price;
+    if ($service_id != '') {
+        $services_id_all = explode(',', $service_id);
+        foreach ($services_id_all as $service_id) {
+            $get_services_price = get_service_price_from_id($service_id);
+            $services_price += $get_services_price;
         }
     }
+//    $quantity = 1 ;
+//    $total = $get_service_price + $services_price ;
 
-    $total = $get_size_price + $addition_price ;
-
-    $total_price = $quantity * $total;
-    $price = $total_price;
+//    $total_price = $quantity * $total;
+    $price = $services_price;
 
     $client_id = $Req['client_id'];
 
-    $result = mysql_query("INSERT INTO cart(sub_category_id,size_id,addition_id,quantity,price,client_id,remove_id,note,status,date) VALUES('$sub_category_id','$size_id','$addition_id','$quantity','$price','$client_id','$remove_id',\"{$note}\" ,'0','" . date("Y-m-d") . "')");
+    $result = mysql_query("INSERT INTO cart(washer_id,vehicle_id,subscription_id,service_id,order_date,order_time,price,client_id,note,status,date) 
+                                           VALUES('$washer_id','$vehicle_id','$subscription_id','$service_id','$order_date','$order_time','$price','$client_id',\"{$note}\" ,'0','" . date("Y-m-d") . "')");
 
 
     $response["product"] = array();

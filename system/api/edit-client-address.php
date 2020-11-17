@@ -30,29 +30,51 @@ $postdata = file_get_contents("php://input");
 if (isset($postdata) && !empty($postdata)) {
     $Req = json_decode($postdata, TRUE);
 
-    $lat = trim($Req['lat']);
-    $lang = trim($Req['lang']);
+    $client_id = $Req['client_id'];
+    $client_address_id = $Req['client_address_id'];
+    $lat_location = trim($Req['lat_location']);
+    $long_location = trim($Req['long_location']);
+    $region = $Req['region_id'];
     $block = mysql_real_escape_string(trim($Req['block']));
     $road = mysql_real_escape_string(trim($Req['road']));
     $building = mysql_real_escape_string(trim($Req['building']));
     $flat_number = mysql_real_escape_string(trim($Req['flat_number']));
     $note = mysql_real_escape_string(trim($Req['note']));
 
-    $region = $Req['region_id'];
     $client_phone = mysql_real_escape_string($Req['client_phone']);
-    $client_id = $Req['client_id'];
-    $client_address_id = $Req['client_address_id'];
 
-    $result = mysql_query("UPDATE `client_addresses` SET `lat`='$lat',`lang`='$lang',`region`='$region',`block`='$block',`road`='$road',
-	`building`='$building',`flat_number`='$flat_number',`client_phone`='$client_phone',`note`='$note' WHERE `client_id`='$client_id' 
-	AND `client_address_id`='$client_address_id'");
+    $result = mysql_query("UPDATE `client_addresses` SET `lat_location` = '$lat_location', 
+                                                               `long_location` = '$long_location', 
+                                                               `region` = '$region', 
+                                                               `block` = '$block', 
+                                                               `road` = '$road', 
+                                                               `building` = '$building', 
+                                                               `flat_number` = '$flat_number', 
+                                                               `client_phone` = '$client_phone', 
+                                                               `note` = '$note', 
+                                                               `client_id` = '$client_id' WHERE `client_addresses`.`client_id` = '$client_id'");
 
 
     $response["product"] = array();
 
     // temp user array
     $product = array();
+    $product["client_address_id"] = $Req["client_address_id"];
+    $product["lat_location"] = $Req["lat_location"];
+    $product["long_location"] = $Req["long_location"];
+    $product["region_id"] = $Req["region_id"];
 
+    $region_id = $Req["region_id"];
+//    $product["region_name"] = get_region_name($region_id);
+
+
+    $product["block"] = $Req["block"];
+    $product["road"] = $Req["road"];
+    $product["building"] = $Req["building"];
+    $product["flat_number"] = $Req["flat_number"];
+    $product["client_phone"] = $Req["client_phone"];
+    $product["note"] = $Req["note"];
+    $product["client_id"] = $Req["client_id"];
 
     // push single product into final response array
     array_push($response["product"], $product);

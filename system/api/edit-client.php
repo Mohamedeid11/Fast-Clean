@@ -65,7 +65,6 @@ if (isset($postdata) && !empty($postdata)) {
                 $product["client_password"] = $row["client_password"];
                 $product["client_email"] = $row["client_email"];
                 $product["client_phone"] = $row["client_phone"];
-                $product["client_image"] = $row["client_image"];
                 $product['date'] = $row['date'];
 
                 // push single product into final response array

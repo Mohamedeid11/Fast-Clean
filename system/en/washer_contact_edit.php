@@ -34,10 +34,10 @@ if (!loggedin()) {
         $washer_contactID_update = $_POST['washer_contactID_update'];
         $washer_id = $_POST['washer_id_update'];
         $phone = $_POST['phone'];
-        $whats_app = $_POST['whats_app'];
+        $mobile = $_POST['mobile'];
         $facebook = $_POST['facebook'];
         $instagram = $_POST['instagram'];
-        $twitter = $_POST['twitter'];
+        $snapchat = $_POST['snapchat'];
 
         $errors = array();
 
@@ -48,7 +48,7 @@ if (!loggedin()) {
             }
         }
         else {
-            $update = $con->query("UPDATE `washer_contact` SET `washer_id`='$washer_id' ,`phone`='$phone',`whats_app`='$whats_app' , `facebook`='$facebook',`instagram`='$instagram' ,`twitter`='$twitter' WHERE `id`='$washer_contactID_update'");
+            $update = $con->query("UPDATE `washer_contact` SET `washer_id`='$washer_id' ,`phone`='$phone',`mobile`='$mobile' , `facebook`='$facebook',`instagram`='$instagram' ,`snapchat`='$snapchat' WHERE `id`='$washer_contactID_update'");
 
             echo get_success("Successfully Updated");
             echo "<meta http-equiv='refresh' content='0'>";
@@ -87,10 +87,10 @@ if (!loggedin()) {
                     $id = $row_select['id'];
                     $washer_id = $row_select['washer_id'];
                     $phone = $row_select['phone'];
-                    $whats_app = $row_select['whats_app'];
+                    $mobile = $row_select['mobile'];
                     $facebook = $row_select['facebook'];
                     $instagram = $row_select['instagram'];
-                    $twitter = $row_select['twitter'];
+                    $snapchat = $row_select['snapchat'];
 
 
                     if ($query_select) {
@@ -125,7 +125,7 @@ if (!loggedin()) {
                                             </div>
                                             <div class="form-group  col-md-5">
                                                 <label for="sub_cat_desc">Whats App</label>
-                                                <input type="text" class="form-control" rows="3" name="whats_app"  minlength="3" maxlength="1000" value="<?= $whats_app ;?>">
+                                                <input type="text" class="form-control" rows="3" name="mobile"  minlength="3" maxlength="1000" value="<?= $mobile ;?>">
                                             </div>
                                             <div class="form-group col-md-5">
                                                 <label for="sub_cat_desc">Face Book</label>
@@ -136,8 +136,8 @@ if (!loggedin()) {
                                                 <input type="text" class="form-control" rows="3" name="instagram"  minlength="3" maxlength="1000" value="<?= $instagram ;?>">
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="sub_cat_desc">Twitter</label>
-                                                <input type="text" class="form-control" rows="3" name="twitter"  minlength="3" maxlength="1000" value="<?= $twitter ;?>">
+                                                <label for="sub_cat_desc">Snapchat</label>
+                                                <input type="text" class="form-control" rows="3" name="Snapchat"  minlength="3" maxlength="1000" value="<?= $snapchat ;?>">
                                             </div>
 
                                             <div class="clearfix"></div>

@@ -52,7 +52,7 @@ $site_lang['status'] = 'الحاله';
 $site_lang['arrangement'] = 'الترتيب';
 $site_lang['image'] = 'الصوره';
 $site_lang['action'] = 'الاعدادات';
-$site_lang['count_all'] = 'العدد';
+$site_lang['count_all'] = 'اجمالي العدد';
 $site_lang['sub_service_name_en'] = 'اسم الخدمه الفرعيه باللغه الانجليزيه';
 $site_lang['sub_service_name_ar'] = 'اسم الخدمه الفرعيه باللغه العربيه';
 $site_lang['sub_service_desc_en'] = 'تفاصيل الخدمه الفرعيه باللغه الانجليزيه';
@@ -80,6 +80,7 @@ $site_lang['client_name'] = 'اسم العميل ';
 $site_lang['client_name_english'] = 'اسم العميل باللغه الانجليزيه ';
 $site_lang['client_name_arabic'] = 'اسم العميل باللغه العربيه';
 $site_lang['update_client'] = 'تحديث عميل';
+$site_lang['client_type'] = 'نوع العميل';
 
 
 /* About us */
@@ -139,6 +140,7 @@ $site_lang['name_arabic'] = 'الاسم باللغه العربيه';
 /* washers */
 $site_lang['washers'] = 'المغاسل';
 $site_lang['add_new_washer'] = 'اضافة مفسله جديده';
+$site_lang['view_all_washer'] = 'عرض كل المغاسل';
 $site_lang['update_washer'] = 'تحديث المغسله';
 $site_lang['washer_name'] = 'اسم المغسله';
 $site_lang['washer_name_english'] = 'اسم المغسله باللغه الانجليزيه';
@@ -153,6 +155,7 @@ $site_lang['washer_desc_arabic'] = 'عن المغسله باللغة العرب�
 
 /*washer Service */
 $site_lang['washer_services'] = 'خدمات المغسله ';
+$site_lang['view_all_washer_services'] = 'عرض كل خدمات المغسله';
 $site_lang['washer_services_edit'] = 'تعديل في خدمات المغسله';
 
 
@@ -160,7 +163,9 @@ $site_lang['washer_services_edit'] = 'تعديل في خدمات المغسله'
 
 /* washers Images */
 $site_lang['washer_images'] = 'صور المغاسل';
+$site_lang['washer_image'] = 'صورة المغسله';
 $site_lang['add_new_washer_image'] = 'اضافة صور مغاسل جديده ';
+$site_lang['view_all_washer_images'] = 'عرض كل صور المغسله';
 $site_lang['update_washer_image'] = 'تحديث صور المغسله ';
 $site_lang['add_image'] = 'اضافة صوره';
 
@@ -169,6 +174,7 @@ $site_lang['add_image'] = 'اضافة صوره';
 /* washer Address */
 $site_lang['washer_address'] = 'عنوان المغسله';
 $site_lang['add_new_washer_address'] = 'اضافة عنوان للمغسله';
+$site_lang['view_all_washer_address'] = 'عرض العنوانين الخاصه بالمغاسل';
 $site_lang['update_washer_address'] = 'تحديث عنوان المغسله';
 $site_lang['address_en'] = 'العنوان باللغه الانجليزيه';
 $site_lang['address_ar'] = ' العنوان باللغه العربيه';
@@ -181,6 +187,7 @@ $site_lang['washer_long'] = 'خطوط الطول';
 /*washer Contact */
 $site_lang['washer_contact'] = 'وسائل التواصل';
 $site_lang['add_new_washer_contact'] = 'اضافة وسيلة تواصل للمغسله';
+$site_lang['view_all_washer_contacts'] = 'عرض كل جهات الاتصال بالمفاسل';
 $site_lang['update_washer_contact'] = 'تحديث وسائل التواصل لملغسله';
 
 
@@ -190,11 +197,21 @@ $site_lang['update_washer_contact'] = 'تحديث وسائل التواصل لم
 /* Work Time */
 $site_lang['work_time'] = 'مواقيت العمل';
 $site_lang['add_new_work_time'] = 'اضافة مواقيت العمل';
+$site_lang['view_all_work_time'] = 'عرض كل مواقيت العمل للمغاسل';
 $site_lang['update_work_time'] = 'تحديث مواقيت العمل';
 $site_lang['day_en'] = 'اليوم باللغه الانجليزيه';
+$site_lang['day'] = 'اليوم';
 $site_lang['day_ar'] = 'اليوم باللغه العربيه';
 $site_lang['from'] = 'من';
 $site_lang['to'] = 'الى';
+$site_lang['time'] = 'الوقت';
+$site_lang['saturday'] = 'السبت';
+$site_lang['sunday'] = 'الاحد';
+$site_lang['monday'] = 'الاثنين';
+$site_lang['tuesday'] = 'الثلاثاء';
+$site_lang['wednesday'] = 'الاربعاء';
+$site_lang['thursday'] = 'الخميس';
+$site_lang['friday'] = 'الجمعه';
 
 
 
@@ -238,7 +255,7 @@ $site_lang['map_lang'] = 'خطوط العرض';
 
 
 $site_lang['about_us'] = 'من نحن';
-$site_lang['about_fastclean'] = 'عن برومو';
+$site_lang['about_fastclean'] = 'عن فاست كلين';
 $site_lang['arabic_title'] = 'العنوان باللغه العربيه';
 $site_lang['english_title'] = 'العنوان باللغه الانجليزيه';
 $site_lang['contact_us'] = 'اتصل بنا';
@@ -294,9 +311,14 @@ $site_lang['cart'] = 'عربة التسوق';
 $site_lang['cart_total'] = 'إجمالي السلة';
 $site_lang['sub_total'] = 'الاجمالي';
 $site_lang['payment_address'] = 'الدفع والعنوان';
+$site_lang['payment_methods'] = 'طرق الدفع';
+$site_lang['payment_methods_view'] = 'عرض لطرق الدفع';
+$site_lang['payment_methods_edit'] = 'تعديل لطريقة الدفع';
 $site_lang['confirm_order'] = 'تأكيد الطلب';
 
 $site_lang['order_details'] = 'تفاصيل الطلب';
+$site_lang['aprove'] = 'قبول';
+$site_lang['refuse'] = 'رفض';
 $site_lang['order_name'] = 'السم المنتج';
 $site_lang['quantity'] = 'الكمية';
 $site_lang['price'] = 'السعر';
@@ -350,8 +372,15 @@ $site_lang['statistics'] = 'الإحصائيات';
 $site_lang['photo'] = 'التقاط صور  ';
 $site_lang['clients'] = 'عملائنا';
 
+$site_lang['orders'] = 'الطلبات ';
 $site_lang['current_orders'] = 'الطلبات الحالية';
+$site_lang['view_current_orders'] = ' عرض الطلبات الحالية';
+$site_lang['view_previous_orders'] = ' عرض الطلبات السابقه';
+$site_lang['search_by_order_id'] = 'البحث بواسطة رقم الاوردر';
+$site_lang['search_by_client_phone'] = 'البحث بواسطة رقم هاتف العميل';
+$site_lang['last_orders'] = 'الطلبات السابقه';
 $site_lang['order_no'] = 'رقم الطلب';
+$site_lang['device_type'] = 'نوع الجهاز';
 $site_lang['no_orders'] = 'لا يوجد طلبات';
 $site_lang['chocolate'] = 'شوكولا';
 

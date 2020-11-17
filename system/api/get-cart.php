@@ -35,7 +35,7 @@ if (isset($_GET['client_id']) && $_GET['lang'] != '') {
 
 
         $total = array();
-        $total['total_amount'] = number_format((float) get_client_cart_total_amount($client_id), 3, '.', '');
+        $total['total_amount'] = get_client_cart_total_amount($client_id);
         $total_amount = get_client_cart_total_amount($client_id);
         $total['check_discount'] = check_discount();
         $check_discount = check_discount();
@@ -46,103 +46,77 @@ if (isset($_GET['client_id']) && $_GET['lang'] != '') {
             $total['total_amount_after_disc'] = strval($total['total_amount_after_disc']);
             $total_amount_after_disc = strval($total['total_amount_after_disc']);
             $vat = strval(check_vat());
-            $vat_added = number_format((float) ( (($vat / 100) * $total_amount_after_disc)), 3, '.', '');
+
+            $vat_added = ($vat / 100) * $total_amount_after_disc;
+
+
             $total['vat'] = strval(check_vat());
 
             $total['vat_value'] = $vat_added;
-            
+
             $discount_value = strval(($discount_percentage / 100) * $total_amount);
-            $total['discount_value'] = number_format((float) ($discount_value), 3, '.', '');
-            
+
+            $total['discount_value'] = $discount_value;
+
             $summary = $total_amount_after_disc + $vat_added;
-            $total['summary'] = number_format((float) ($summary), 3, '.', '');
-            
+            $total['summary'] = $summary;
         } else {
             $total['discount_percentage'] = 0;
-            $total['total_amount_after_disc'] = number_format((float) ($total_amount), 3, '.', '');
+
+            $total['total_amount_after_disc'] = $total_amount;
+
             $total['total_amount_after_disc'] = strval($total['total_amount_after_disc']);
             $total_amount_after_disc = strval($total['total_amount_after_disc']);
             $vat = strval(check_vat());
-            $vat_added = number_format((float) ( (($vat / 100) * $total_amount_after_disc)), 3, '.', '');
+            $vat_added = ($vat / 100) * $total_amount_after_disc;
             $total['vat'] = strval(check_vat());
 
             $total['vat_value'] = $vat_added;
-            
-            $discount_value = strval(($discount_percentage / 100) * $total_amount);
-            $total['discount_value'] = number_format((float) ($discount_value), 3, '.', '');
-            
+
+            $discount_value =  $total_amount;
+
+
+            $total['discount_value'] = $discount_value;
+
             $summary = $total_amount_after_disc + $vat_added;
-            $total['summary'] = number_format((float) ($summary), 3, '.', '');
+
+            $total['summary'] = $summary;
         }
-        
+
 
         while ($row = mysql_fetch_array($result)) {
 
 // temp user array
             $product = array();
-            $addition_arr_values = array();
-            $remove_arr_values = array();
             $product["cart_id"] = $row["cart_id"];
-            $product["sub_category_id"] = $row["sub_category_id"];
-            $sub_category_id = $row["sub_category_id"];
-
-            $product["remove_id"] = $row["remove_id"];
+            $product["washer_id"] = $row["washer_id"];
+            $washer_id = $row["washer_id"];
+            $vehicle_id = $row["vehicle_id"];
+            $subscription_id = $row["subscription_id"];
             $remove_id = $row["remove_id"];
 
             if ($lang == "ar") {
-                $product["sub_category_desc"] = get_sub_category_desc_ar_from_id($sub_category_id);
-                $product["sub_category_name"] = get_sub_category_name_ar_from_id($sub_category_id);
+                $product["washer_name"] = get_washer_name_ar_from_id($washer_id);
+                $product["vehicle_name"] = get_vehicle_name_ar_from_id($vehicle_id);
+                $product["subscription_name"] = get_subscription_name_ar_from_id($subscription_id);
             } else {
-                $product["sub_category_name"] = get_sub_category_name_from_id($sub_category_id);
-                $product["sub_category_desc"] = get_sub_category_desc_from_id($sub_category_id);
+                $product["washer_name"] = get_washer_name_en_from_id($washer_id);
+                $product["vehicle_name"] = get_vehicle_name_en_from_id($vehicle_id);
+                $product["subscription_name"] = get_subscription_name_en_from_id($subscription_id);
             }
-            $product["sub_category_image"] = get_sub_category_image_from_id($sub_category_id);
+            $product["washer_image"] = get_washer_image_from_id($washer_id);
 
-            $product["size_id"] = $row["size_id"];
-            $size_id = $row["size_id"];
+            $product["service_id"] = $row["service_id"];
+            $service_id = $row["service_id"];
             if ($lang == "ar") {
-                $product["size_name"] = get_size_name_ar_from_id($size_id);
+                $product["service_name"] = get_service_name_ar_from_id($service_id);
             } else {
-                $product["size_name"] = get_size_name_from_id($size_id);
+                $product["service_name"] = get_service_name_en_from_id($service_id);
             }
-            $product["size_price"] = number_format((float) (get_size_price_from_id($size_id)), 3, '.', '');
-
-            $product["addition_id"] = $row["addition_id"];
-            $addition_id = $row["addition_id"];
-
-            if ($addition_id != '') {
-                $addition_id_all = explode(',', $addition_id);
-                foreach ($addition_id_all as $one) {
-                    if ($lang == "ar") {
-                        $addition["addition_name"] = get_addition_name_ar_from_id($one);
-                    } else {
-                        $addition["addition_name"] = get_addition_name_from_id($one);
-                    }
-                    $addition["addition_price"] = number_format((float) get_addition_price_from_id($one), 3, '.', '');
-                    array_push($addition_arr_values, $addition);
-                }
-            }
-
-            $product["addition"] = $addition_arr_values;
+            $product["services_price"] = get_service_price_from_id($service_id);
 
 
-
-            if ($remove_id != '') {
-                $remove_id_all = explode(',', $remove_id);
-                foreach ($remove_id_all as $one) {
-                    if ($lang == "ar") {
-                        $remove["remove_name"] = get_remove_name_ar_from_id($one);
-                    } else {
-                        $remove["remove_name"] = get_remove_name_from_id($one);
-                    }
-                    array_push($remove_arr_values, $remove);
-                }
-            }
-
-            $product["remove"] = $remove_arr_values;
-
-            $product["quantity"] = $row["quantity"];
-            $product["price"] = number_format((float) $row["price"], 3, '.', '');
+            $product["price"] = $row["price"];
             $product["client_id"] = $_GET["client_id"];
 
 

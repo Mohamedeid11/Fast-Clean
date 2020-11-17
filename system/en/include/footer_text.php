@@ -1,4 +1,4 @@
-<footer class="footer text-right">
-    BERRY &copy;
+<footer class="footer text-<?= lang('align')?>">
+    <?= lang('fast_clean')?> &copy;
     2020
 </footer>

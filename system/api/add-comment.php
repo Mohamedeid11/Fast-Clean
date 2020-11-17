@@ -31,10 +31,10 @@ if (isset($postdata) && !empty($postdata)) {
     $Req = json_decode($postdata, TRUE);
 
     $client_id = $Req['client_id'];
-    $sub_category_id = $Req['sub_category_id'];
+    $washer_id = $Req['washer_id'];
     $comment = $Req['comment'];
     $rate = $Req['rate'];
-    $check_sub_category_comment = check_sub_category_comment($client_id, $sub_category_id);
+    $check_sub_category_comment = check_sub_category_comment($client_id, $washer_id);
 
     if ($check_sub_category_comment >= 1) {
 
@@ -45,7 +45,7 @@ if (isset($postdata) && !empty($postdata)) {
         // echoing JSON response
         echo json_encode($response);
     } else {
-        $result = mysql_query("INSERT INTO sub_category_comments(client_id,sub_category_id,comment,rate,viewed,date) VALUES('$client_id','$sub_category_id','$comment','$rate','0','" . date("Y-m-d H:i:s") . "')");
+        $result = mysql_query("INSERT INTO comments(client_id,washer_id,comment,rate,viewed,date) VALUES('$client_id','$washer_id','$comment','$rate','0','" . date("Y-m-d H:i:s") . "')");
 
 
         $response["product"] = array();
@@ -54,7 +54,7 @@ if (isset($postdata) && !empty($postdata)) {
         $product = array();
         $product["comment_id"] = mysql_insert_id();
         $product["client_id"] = $Req["client_id"];
-        $product["sub_category_id"] = $Req["sub_category_id"];
+        $product["washer_id"] = $Req["washer_id"];
         $product["comment"] = $Req["comment"];
         $product["rate"] = $Req["rate"];
 

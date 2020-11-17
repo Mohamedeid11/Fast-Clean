@@ -83,6 +83,7 @@ $site_lang['client_name'] = 'Client Name';
 $site_lang['client_name_english'] = 'Client Name In english';
 $site_lang['client_name_arabic'] = 'Client Name In Arabic';
 $site_lang['update_client'] = 'Update Client';
+$site_lang['client_type'] = 'Client Type';
 
 
 /* About us */
@@ -137,6 +138,7 @@ $site_lang['name_arabic'] = 'Name In Arabic';
 /*washers */
 $site_lang['washers'] = 'Washers';
 $site_lang['add_new_washer'] = 'Add New Washer';
+$site_lang['view_all_washer'] = 'View all Washers';
 $site_lang['update_washer'] = 'Update Washer';
 $site_lang['washer_name'] = 'Washer Name';
 $site_lang['washer_name_english'] = 'Washer Name In English';
@@ -151,12 +153,14 @@ $site_lang['washer_desc_arabic'] = 'Washer Description In Arabic';
 
 /*washer Service */
 $site_lang['washer_services'] = 'Washer Services';
+$site_lang['view_all_washer_services'] = 'View All WAsher Services';
 $site_lang['washer_services_edit'] = 'Edit Washer Services';
 
 
 /* washer Images */
 $site_lang['washer_images'] = 'Washer Images';
 $site_lang['add_new_washer_image'] = 'Add New Washer Image';
+$site_lang['view_all_washer_images'] = 'View All Washer Images';
 $site_lang['update_washer_image'] = 'Update Washer Image';
 $site_lang['add_image'] = 'Add Image';
 
@@ -165,6 +169,7 @@ $site_lang['add_image'] = 'Add Image';
 /* washer Address */
 $site_lang['washer_address'] = 'Washer Address';
 $site_lang['add_new_washer_address'] = 'Add New Washer Address';
+$site_lang['view_all_washer_address'] = 'View All Washer Address';
 $site_lang['update_washer_address'] = 'Update Washer Address';
 $site_lang['address_en'] = 'Address In English';
 $site_lang['address_ar'] = 'Address In Arabic';
@@ -176,6 +181,7 @@ $site_lang['washer_long'] = 'Longitude';
 /*washer Contact */
 $site_lang['washer_contact'] = 'Washer Contact';
 $site_lang['add_new_washer_contact'] = 'Add New Washer Contact';
+$site_lang['view_all_washer_contacts'] = 'View All Washer Contacts';
 $site_lang['update_washer_contact'] = 'Update Washer Contact';
 
 
@@ -184,11 +190,20 @@ $site_lang['update_washer_contact'] = 'Update Washer Contact';
 /* Work Time */
 $site_lang['work_time'] = 'Work Time';
 $site_lang['add_new_work_time'] = 'Add New Work Time';
+$site_lang['view_all_work_time'] = 'View All Work Time';
 $site_lang['update_work_time'] = 'Update Work Time';
 $site_lang['day_en'] = 'Day In English';
 $site_lang['day_ar'] = 'Day In Arabic';
 $site_lang['from'] = 'From';
 $site_lang['to'] = 'To';
+$site_lang['time'] = 'Time';
+$site_lang['saturday'] = 'Saturday';
+$site_lang['sunday'] = 'Sunday';
+$site_lang['monday'] = 'Monday';
+$site_lang['tuesday'] = 'Tuesday';
+$site_lang['wednesday'] = 'Wednesday';
+$site_lang['thursday'] = 'Thursday';
+$site_lang['friday'] = 'Friday';
 
 
 
@@ -293,9 +308,14 @@ $site_lang['close'] = 'Close';
 /* My Cart */
 $site_lang['cart'] = 'Cart';
 $site_lang['payment_address'] = 'Payment & Address';
+$site_lang['payment_methods'] = 'Payment Methods';
+$site_lang['payment_methods_view'] = 'Payment Methods View';
+$site_lang['payment_methods_edit'] = 'Edit Payment Methods';
 $site_lang['confirm_order'] = 'Confirm Order';
 
 $site_lang['order_details'] = 'Order Details';
+$site_lang['aprove'] = 'Aprove';
+$site_lang['refuse'] = 'Refuse';
 $site_lang['order_name'] = 'Order name';
 $site_lang['quantity'] = 'Quantity';
 $site_lang['price'] = 'Price';
@@ -351,8 +371,15 @@ $site_lang['statistics'] = 'STATISTICS';
 $site_lang['photo'] = 'PHOTO TAKEN';
 $site_lang['clients'] = 'Clients';
 
+$site_lang['orders'] = 'Orders';
 $site_lang['current_orders'] = 'Current Orders';
+$site_lang['view_current_orders'] = 'View Current Orders';
+$site_lang['view_previous_orders'] = 'View Previous Orders';
+$site_lang['search_by_order_id'] = 'Search By Order ID';
+$site_lang['search_by_client_phone'] = 'Search By Client Phone';
+$site_lang['last_orders'] = 'Last Orders';
 $site_lang['order_no'] = 'Order No';
+$site_lang['device_type'] = 'Device Type';
 $site_lang['no_orders'] = 'No Orders';
 
 

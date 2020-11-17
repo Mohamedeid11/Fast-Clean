@@ -21,14 +21,48 @@
   <component name="ChangeListManager">
     <list default="true" id="4510e4bf-319d-4b2d-9435-b6c18ad7a5db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fast Clean.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/Fast Clean.postman_collection.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ar.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/en.php" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/api/get-about.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/get-about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/api/get-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/get-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/en/about_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/about_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/en/contact_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/contact_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/add-client-address.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/add-client-address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/add-comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/add-comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/add-to-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/add-to-cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/confirm-order.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/confirm-order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/delete-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/delete-cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/delete-comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/delete-comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/edit-client-address.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/edit-client-address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/edit-client.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/edit-client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/edit-comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/edit-comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/get-cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/get-cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/my-current-orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/my-current-orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/api/my-last-orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/api/my-last-orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/category_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/category_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/include/footer_text.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/include/footer_text.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/system/en/include/leftsidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/include/leftsidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/en/setting_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/setting_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/include/rightContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/include/rightContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/service_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/service_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/subscription_type_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/subscription_type_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/subscription_type_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/subscription_type_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/vehicle_type_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/vehicle_type_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/vehicle_type_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/vehicle_type_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_address_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_address_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_address_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_address_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_address_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_address_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_contact_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_contact_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_contact_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_contact_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_contact_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_contact_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_images_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_images_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_images_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_images_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_images_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_images_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_service_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_service_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/washer_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/washer_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/work_time_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/work_time_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/work_time_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/work_time_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/en/work_time_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/en/work_time_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +90,16 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Learning/shamel_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/system/en/assets_en/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Xampp\htdocs\Work\Fastclean\system\en\assets_en\css" />
+      <recent name="F:\Xampp\htdocs\Work\Fastclean\system\en\assets_ar\css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,6 +136,14 @@
       <workItem from="1604839681351" duration="6300000" />
       <workItem from="1604904458258" duration="14629000" />
       <workItem from="1604991337846" duration="25983000" />
+      <workItem from="1605077736911" duration="24127000" />
+      <workItem from="1605111647080" duration="701000" />
+      <workItem from="1605165140793" duration="25330000" />
+      <workItem from="1605266792516" duration="1987000" />
+      <workItem from="1605343274156" duration="17517000" />
+      <workItem from="1605374747351" duration="9836000" />
+      <workItem from="1605435709299" duration="19706000" />
+      <workItem from="1605516572392" duration="30515000" />
     </task>
     <servers />
   </component>
@@ -112,6 +160,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2224" y="15" key="#Deployment" timestamp="1604824981309">
@@ -133,19 +182,19 @@
     </state>
     <state x="2012" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604475503091" />
     <state x="103" y="104" width="1330" height="616" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1604652251629" />
-    <state x="1982" y="82" width="901" height="564" key="DirDiffDialog" timestamp="1605016675687">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state x="93" y="93" width="1350" height="638" key="DirDiffDialog" timestamp="1605559022741">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1982" y="82" width="901" height="564" key="DirDiffDialog/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605016675687" />
+    <state x="1982" y="82" width="901" height="564" key="DirDiffDialog/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605192528849" />
     <state x="2003" y="82" width="1201" height="564" key="DirDiffDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604934734843" />
-    <state x="93" y="93" width="1350" height="638" key="DirDiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1604745117128" />
-    <state x="2286" y="148" key="FileChooserDialogImpl" timestamp="1605029585110">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state x="93" y="93" width="1350" height="638" key="DirDiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1605559022741" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605558999033">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2286" y="148" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605029585110" />
+    <state x="2286" y="148" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605177818299" />
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604503233936" />
     <state x="2408" y="148" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604995306635" />
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604756279164" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605558999033" />
     <state x="147" y="65" key="MergeDialog" timestamp="1604617246007">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -155,26 +204,27 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604823520319" />
     <state x="2166" y="18" key="SettingsEditor/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604824833738" />
-    <state x="754" y="183" width="688" height="592" key="find.popup" timestamp="1603802938981">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2388" y="0" width="556" height="728" key="find.popup" timestamp="1605084016369">
+      <screen x="1920" y="0" width="1024" height="728" />
     </state>
+    <state x="2388" y="0" width="556" height="728" key="find.popup/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605084016369" />
     <state x="754" y="183" width="688" height="592" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1603802938981" />
     <state x="635" y="89" key="ftp.server.browser" timestamp="1603798493745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="635" y="89" key="ftp.server.browser/0.0.1536.824@0.0.1536.824" timestamp="1603798493745" />
-    <state x="2203" y="165" key="run.anything.popup" timestamp="1605023240182">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605438059053">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2203" y="165" key="run.anything.popup/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605023240182" />
     <state x="2298" y="165" key="run.anything.popup/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604325410019" />
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1604579912084" />
-    <state x="2207" y="128" width="672" height="600" key="search.everywhere.popup" timestamp="1605023424986">
-      <screen x="1920" y="0" width="1024" height="728" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605438059053" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605550625585">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2207" y="128" width="672" height="600" key="search.everywhere.popup/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605023424986" />
+    <state x="2207" y="128" width="672" height="600" key="search.everywhere.popup/0.0.1536.824/1920.0.1024.728@1920.0.1024.728" timestamp="1605188438948" />
     <state x="2303" y="128" width="672" height="600" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604315156409" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604660353450" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605550625585" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

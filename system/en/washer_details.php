@@ -53,7 +53,7 @@ if (!loggedin()) {
                 $row_select = mysqli_fetch_array($query_select);
 
                 $washer_id = $row_select['washer_id'];
-                $washer_type_id = $row_select['washer_type_id'];
+                $category_id = $row_select['category_id'];
                 $washer_name_en = $row_select['washer_name_en'];
                 $washer_name_ar = $row_select['washer_name_ar'];
                 $washer_desc_en = $row_select['washer_desc_en'];
@@ -74,17 +74,17 @@ if (!loggedin()) {
                                 <table class="table">
                                     <tbody>
                                     <?php
-                                    $queryB = $con->query("SELECT * FROM `washer_type` WHERE `id`='$washer_type_id'");
+                                    $queryB = $con->query("SELECT * FROM `category` WHERE `id`='$category_id'");
 
                                     while ($row = mysqli_fetch_assoc($queryB)) {
                                         $id = $row['id'] ;
-                                        $washer_type_name_en = $row['washer_type_name_en'] ;
+                                        $category_name_en = $row['category_name_en'] ;
                                     }
                                     ?>
                                     <tr>
-                                        <td width="400"><?=lang('washer_type')?></td>
+                                        <td width="400"><?=lang('category')?></td>
                                         <td>
-                                            <a href="washer_view.php"><?=$washer_type_name_en; ?></a>
+                                            <a href="washer_view.php"><?=$category_name_en; ?></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -159,12 +159,83 @@ if (!loggedin()) {
                                                 </tr>';
                                     }
                                     ?>
+
+
+                                    <tr>
+                                        <td width="400">   <?=lang('washer_images')?>:</td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    $query_images = $con->query("SELECT * FROM `washer_images` where washer_id='$washer_id' ORDER BY `id` ASC");
+                                    $index_images = 0;
+                                    $images_count = mysqli_num_rows($query_images);
+                                    if ($images_count > 0) {
+                                        while ($images_row = mysqli_fetch_assoc($query_images)) {
+                                            $image = $images_row['image'];
+                                            ?>
+
+                                            <tr>
+                                                <td width="400">
+                                                    <?=lang('image')?>
+                                                </td>
+                                                <td width="400">
+                                                    <img src="<?php echo $image; ?>" style="height: 200px;width: 200px;margin-left: 10px;">
+                                                </td>
+                                            </tr>
+                                            <?php
+                                        }
+                                    } else {
+                                        echo '<tr>
+                                                    <td width="400">   No Images </td>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>';
+                                    }
+                                    ?>
+                                    <tr>
+                                        <td width="400">   <?=lang('washer_address')?>:</td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+
+                                    <?php
+                                    $queryB = $con->query("SELECT * FROM `washer_address` WHERE `id`='$washer_id'");
+
+                                    while ($row = mysqli_fetch_assoc($queryB)) {
+                                        $id = $row['id'] ;
+                                        $address_en = $row['address_en'] ;
+                                        $address_ar = $row['address_ar'] ;
+                                        $location_lat = $row['lat'] ;
+                                        $location_long = $row['long'] ;
+                                    }
+                                    ?>
+                                    <tr>
+                                        <td width="400"><?=lang('address_en')?></td>
+                                        <td>
+                                            <a href="washer_view.php"><?=$address_en; ?></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="400"><?=lang('address_ar')?></td>
+                                        <td>
+                                            <a href="washer_view.php"><?=$address_ar; ?></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="400"><?=lang('address_map')?></td>
+                                        <td>
+                                            <a target="_blank" href="https://www.google.com/maps/@<?= $location_lat ?>,<?= $location_long ?>,17z" class="btn map-link">View Map</a>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                             <div class="form-group">
-                                <label class="col-md-3 control-label"><?=lang('image')?>   :</label>
+                                <label class="col-md-3 control-label"><?=lang('washer_image')?>   :</label>
 
                                 <div class="col-md-9">
                                     <div class="form-group col-md-4">

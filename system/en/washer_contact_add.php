@@ -28,10 +28,10 @@ if (!loggedin()) {
 
         $washer_id = $_POST['washer_id'];
         $phone = mysqli_real_escape_string($con, trim($_POST['phone']));
-        $whats_app = mysqli_real_escape_string($con, trim($_POST['whats_app']));
+        $mobile = mysqli_real_escape_string($con, trim($_POST['mobile']));
         $facebook = mysqli_real_escape_string($con, trim($_POST['facebook']));
         $instagram = mysqli_real_escape_string($con, trim($_POST['instagram']));
-        $twitter = mysqli_real_escape_string($con, trim($_POST['twitter']));
+        $snapchat = mysqli_real_escape_string($con, trim($_POST['snapchat']));
 
 
         $errors = array();
@@ -43,7 +43,7 @@ if (!loggedin()) {
                 echo get_error($error);
             }
         } else {
-            $con->query(" INSERT INTO `washer_contact` (`washer_id`,`phone`, `whats_app`, `facebook`,`instagram` ,`twitter`) VALUES ('$washer_id', '$phone' , '$whats_app' , '$facebook' ,'$instagram' , '$twitter')");
+            $con->query(" INSERT INTO `washer_contact` (`washer_id`,`phone`, `mobile`, `facebook`,`instagram` ,`snapchat`) VALUES ('$washer_id', '$phone' , '$mobile' , '$facebook' ,'$instagram' , '$snapchat')");
             echo get_success("Successfully Added");
         }
     }
@@ -89,8 +89,8 @@ if (!loggedin()) {
                                         <input type="tel" class="form-control" rows="3" name="phone"  minlength="3" maxlength="1000" placeholder="<?=lang('phone_number')?>"></input>
                                     </div>
                                     <div class="form-group col-md-5">
-                                        <label for="sub_cat_desc">Whats App</label>
-                                        <input type="tel" class="form-control" rows="3" name="whats_app"  minlength="3" maxlength="1000" placeholder="Whats App"></input>
+                                        <label for="sub_cat_desc">Mobile</label>
+                                        <input type="tel" class="form-control" rows="3" name="mobile"  minlength="3" maxlength="1000" placeholder="Mobile"></input>
                                     </div>
                                     <div class="form-group col-md-5">
                                         <label for="sub_cat_desc">Face Book</label>
@@ -101,8 +101,8 @@ if (!loggedin()) {
                                         <input type="text" class="form-control" rows="3" name="instagram"  minlength="3" maxlength="1000" placeholder="Instagram"></input>
                                     </div>
                                     <div class="form-group col-md-5">
-                                        <label for="sub_cat_desc">Twitter</label>
-                                        <input type="text" class="form-control" rows="3" name="twitter"  minlength="3" maxlength="1000" placeholder="Twitter"></input>
+                                        <label for="sub_cat_desc">Snapchat</label>
+                                        <input type="text" class="form-control" rows="3" name="snapchat"  minlength="3" maxlength="1000" placeholder="Snapchat"></input>
                                     </div>
 
                                     <div class="clearfix"></div>
@@ -139,7 +139,7 @@ if (!loggedin()) {
 <script>
     $(document).ready(function () {
         $("#cssmenu ul>li").removeClass("active");
-        $("#item7").addClass("active");
+        $("#item4").addClass("active");
     });
 </script>
 

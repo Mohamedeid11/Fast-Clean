@@ -49,10 +49,8 @@ if (!loggedin()) {
                                     <tr>
                                         <th>#</th>
                                         <th><?=lang('washer_name_english')?></th>
-                                        <th><?=lang('day_en')?></th>
-                                        <th><?=lang('day_ar')?></th>
-                                        <th><?=lang('from')?></th>
-                                        <th><?=lang('to')?></th>
+                                        <th><?=lang('day')?></th>
+                                        <th><?=lang('time')?></th>
                                         <th><?=lang('date_add')?></th>
                                         <th><?=lang('action')?></th>
 
@@ -67,10 +65,8 @@ if (!loggedin()) {
                                     while ($row = mysqli_fetch_assoc($query)) {
                                         $id = $row['id'];
                                         $washer_id = $row['washer_id'];
-                                        $day_en = $row['day_en'];
-                                        $day_ar = $row['day_ar'];
-                                        $from = $row['from'];
-                                        $to = $row['to'];
+                                        $day = $row['day'];
+                                        $time = $row['time'];
                                         $date = $row['date'];
                                         ?>
                                         <tr class="gradeX">
@@ -88,16 +84,10 @@ if (!loggedin()) {
                                                 <?= $washer_name_en ?>
                                             </td>
                                             <td>
-                                                <?= $day_en ?>
+                                                <?= $day ?>
                                             </td>
                                             <td>
-                                                <?= $day_ar ?>
-                                            </td>
-                                            <td>
-                                                <?= $from ?>
-                                            </td>
-                                            <td>
-                                                <?= $to ?>
+                                                <?= $time ?>
                                             </td>
 
 
@@ -186,8 +176,8 @@ if (!loggedin()) {
 
 <script>
     $(document).ready(function () {
-        $("#cssslider ul>li").removeClass("active");
-        $("#item5").addClass("active");
+        $("#cssmenu ul>li").removeClass("active");
+        $("#item4").addClass("active");
     });
 </script>
 

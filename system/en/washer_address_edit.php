@@ -102,7 +102,7 @@ if (!loggedin()) {
                                         <input type="hidden" name="washer_addressID_update" id="washer_addressID_update" parsley-trigger="change" required value="<?php echo $id; ?>" class="form-control">
 
                                         <div class="form-group   m-b-0">
-                                            <label for="parent_category_id_update">Project  </label>
+                                            <label for="parent_category_id_update"><?= lang('washers')?></label>
                                             <select class="form-control select2me" name="washer_id_update" id="parent_category_id" required parsley-trigger="change">
                                                 <option value="" >Choose</option>
                                                 <?php
@@ -172,10 +172,9 @@ if (!loggedin()) {
 <!-- END wrapper -->
 <?php include("include/footer.php"); ?>
 <script>
-    $('.select2m').select2({
-        placeholder: "Select",
-        width: 'auto',
-        allowClear: true
+    $(document).ready(function () {
+        $("#cssmenu ul>li").removeClass("active");
+        $("#item4").addClass("active");
     });
 </script>
 

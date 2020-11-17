@@ -629,16 +629,30 @@ function check_item_fav($client_id, $sub_category_id) {
     }
 }
 
-function check_category_exist($sub_category_id) {
+//function check_category_exist($sub_category_id) {
+//
+//    $result = mysql_query("SELECT * FROM `sub_categories` WHERE `sub_category_id`='$sub_category_id' ORDER BY `sub_category_id` DESC") or die(mysql_error());
+//    $row = mysql_fetch_array($result);
+//    $parent_category_id = $row['parent_category_id'];
+//    $result_1 = mysql_query("SELECT * FROM `parent_categories` WHERE `parent_category_id`='$parent_category_id' ORDER BY `parent_category_id` DESC") or die(mysql_error());
+//    $row_1 = mysql_fetch_array($result_1);
+//    $display = $row_1['display'];
+//    return $display;
+//}
 
-    $result = mysql_query("SELECT * FROM `sub_categories` WHERE `sub_category_id`='$sub_category_id' ORDER BY `sub_category_id` DESC") or die(mysql_error());
+function check_category_exist($washer_id) {
+
+    $result = mysql_query("SELECT * FROM `washers` WHERE `washer_id`='$washer_id' ORDER BY `washer_id` DESC") or die(mysql_error());
+//     echo get_success(mysqli_error($con));
     $row = mysql_fetch_array($result);
-    $parent_category_id = $row['parent_category_id'];
-    $result_1 = mysql_query("SELECT * FROM `parent_categories` WHERE `parent_category_id`='$parent_category_id' ORDER BY `parent_category_id` DESC") or die(mysql_error());
+    $category_id = $row['category_id'];
+    $result_1 = mysql_query("SELECT * FROM `category` WHERE `id`='$category_id' ORDER BY `id` DESC") or die(mysql_error());
     $row_1 = mysql_fetch_array($result_1);
     $display = $row_1['display'];
     return $display;
 }
+
+
 function get_parent_category_by_sub_category_id($sub_category_id) {
 
     $result = mysql_query("SELECT * FROM `sub_categories` WHERE `sub_category_id`='$sub_category_id' ORDER BY `sub_category_id` DESC") or die(mysql_error());
@@ -652,6 +666,17 @@ function get_parent_category_by_sub_category_id($sub_category_id) {
 function check_sub_category_exist($sub_category_id) {
 
     $result = mysql_query("SELECT * FROM `sub_categories` WHERE `sub_category_id`='$sub_category_id' ORDER BY `sub_category_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $display = $row['display'];
+
+    return $display;
+}
+
+function check_washer_exist($washer_id) {
+
+    $result = mysql_query("SELECT * FROM `washers` WHERE `washer_id`='$washer_id' ORDER BY `washer_id` DESC") or die(mysql_error());
 
     $row = mysql_fetch_array($result);
 
@@ -759,6 +784,18 @@ function get_sub_category_name_from_id($sub_category_id) {
     return $sub_category_name;
 }
 
+
+function get_washer_name_en_from_id($washer_id) {
+
+    $result = mysql_query("SELECT * FROM `washers` WHERE `washer_id`='$washer_id' ORDER BY `washer_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $washer_name_en = $row['washer_name_en'];
+
+    return $washer_name_en;
+}
+
 function get_sub_category_desc_from_id($sub_category_id) {
 
     $result = mysql_query("SELECT * FROM `sub_categories` WHERE `sub_category_id`='$sub_category_id' ORDER BY `sub_category_id` DESC") or die(mysql_error());
@@ -768,6 +805,28 @@ function get_sub_category_desc_from_id($sub_category_id) {
     $sub_category_desc = $row['sub_category_desc'];
 
     return $sub_category_desc;
+}
+
+function get_vehicle_name_en_from_id($vehicle_id) {
+
+    $result = mysql_query("SELECT * FROM `vehicle_type` WHERE `id`='$vehicle_id' ORDER BY `id` And `display` = 1 DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $vehicle_name = $row['vehicle_name_en'];
+
+    return $vehicle_name;
+}
+
+function get_subscription_name_en_from_id($subscription_id) {
+
+    $result = mysql_query("SELECT * FROM `subscription_type` WHERE `id`='$subscription_id' ORDER BY `id` And `display` = 1 DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $subscription_name = $row['subscription_name_en'];
+
+    return $subscription_name;
 }
 
 function get_sub_category_name_ar_from_id($sub_category_id) {
@@ -781,6 +840,17 @@ function get_sub_category_name_ar_from_id($sub_category_id) {
     return $sub_category_name;
 }
 
+function get_washer_name_ar_from_id($washer_id) {
+
+    $result = mysql_query("SELECT * FROM `washers` WHERE `washer_id`='$washer_id' ORDER BY `washer_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $washer_name_ar = $row['washer_name_ar'];
+
+    return $washer_name_ar;
+}
+
 function get_sub_category_desc_ar_from_id($sub_category_id) {
 
     $result = mysql_query("SELECT * FROM `sub_categories` WHERE `sub_category_id`='$sub_category_id' ORDER BY `sub_category_id` DESC") or die(mysql_error());
@@ -790,6 +860,26 @@ function get_sub_category_desc_ar_from_id($sub_category_id) {
     $sub_category_desc = $row['sub_category_desc_ar'];
 
     return $sub_category_desc;
+}
+function get_vehicle_name_ar_from_id($vehicle_id) {
+
+    $result = mysql_query("SELECT * FROM `vehicle_type` WHERE `id`='$vehicle_id' And display = 1 order by`id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $vehicle_name = $row['vehicle_name_ar'];
+
+    return $vehicle_name;
+}
+function get_subscription_name_ar_from_id($subscription_id) {
+
+    $result = mysql_query("SELECT * FROM `subscription_type` WHERE `id`='$subscription_id' And display = 1 order by`id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $subscription_name = $row['subscription_name_ar'];
+
+    return $subscription_name;
 }
 
 function get_sub_category_image_from_id($sub_category_id) {
@@ -801,6 +891,17 @@ function get_sub_category_image_from_id($sub_category_id) {
     $sub_category_image = $row['sub_category_image'];
 
     return $sub_category_image;
+}
+
+function get_washer_image_from_id($washer_id) {
+
+    $result = mysql_query("SELECT * FROM `washers` WHERE `washer_id`='$washer_id' ORDER BY `washer_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $washer_image = $row['washer_image'];
+
+    return $washer_image;
 }
 
 function get_client_name_from_id($client_id) {
@@ -846,7 +947,6 @@ function get_size_name_from_id($size_id) {
 
     return $sub_category_size_name;
 }
-
 function get_size_name_ar_from_id($size_id) {
 
     $result = mysql_query("SELECT * FROM `sub_categories_size_prices` WHERE `sub_category_size_price_id`='$size_id' ORDER BY `sub_category_size_price_id` DESC") or die(mysql_error());
@@ -858,6 +958,28 @@ function get_size_name_ar_from_id($size_id) {
     return $sub_category_size_name;
 }
 
+function get_service_name_ar_from_id($service_id) {
+
+    $result = mysql_query("SELECT * FROM `services` WHERE `service_id`='$service_id' ORDER BY `service_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $service_name = $row['service_name_ar'];
+
+    return $service_name;
+}
+
+function get_service_name_en_from_id($service_id) {
+
+    $result = mysql_query("SELECT * FROM `services` WHERE `service_id`='$service_id' ORDER BY `service_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $service_name = $row['service_name_en'];
+
+    return $service_name;
+}
+
 function get_size_price_from_id($size_id) {
 
     $result = mysql_query("SELECT * FROM `sub_categories_size_prices` WHERE `sub_category_size_price_id`='$size_id' ORDER BY `sub_category_size_price_id` DESC") or die(mysql_error());
@@ -867,6 +989,16 @@ function get_size_price_from_id($size_id) {
     $sub_category_size_price = $row['sub_category_size_price'];
 
     return $sub_category_size_price;
+}
+function get_service_price_from_id($service_id) {
+
+    $result = mysql_query("SELECT * FROM `services` WHERE `service_id`='$service_id' ORDER BY `service_id` DESC") or die(mysql_error());
+
+    $row = mysql_fetch_array($result);
+
+    $service_price = $row['service_price'];
+
+    return $service_price;
 }
 
 function get_addition_name_from_id($addition_id) {
@@ -891,15 +1023,15 @@ function get_addition_name_ar_from_id($addition_id) {
     return $sub_category_addition_name;
 }
 
-function get_addition_price_from_id($addition_id) {
+function get_total_service_price_from_id($service_id) {
 
-    $result = mysql_query("SELECT * FROM `sub_categories_addition_prices` WHERE `sub_category_addition_price_id`='$addition_id' ORDER BY `sub_category_addition_price_id` DESC") or die(mysql_error());
+    $result = mysql_query("SELECT * FROM `services` WHERE `service_id`='$service_id' ORDER BY `service_id` DESC") or die(mysql_error());
 
     $row = mysql_fetch_array($result);
 
-    $sub_category_addition_price = $row['sub_category_addition_price'];
+    $service_price = $row['service_price'];
 
-    return $sub_category_addition_price;
+    return $service_price;
 }
 
 function get_client_cart_total_amount($client_id) {
@@ -911,8 +1043,6 @@ function get_client_cart_total_amount($client_id) {
     while ($row = mysql_fetch_array($result)) {
 
         $price = $row['price'];
-
-        $quantity = $row['quantity'];
 
         $total[] = $price;
     }

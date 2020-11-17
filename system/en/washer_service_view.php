@@ -47,7 +47,7 @@ if (!loggedin()) {
                         </div>
                     </div>
                     <h4>
-                        Count All   : <?php echo $data_num; ?>
+                        <?= lang('count_all')?>    : <?php echo $data_num; ?>
                     </h4>
                     <div class="panel">
                         <div class="panel-body">
@@ -57,6 +57,8 @@ if (!loggedin()) {
                                     <th>#</th>
                                     <th><?=lang('washer_name_english')?></th>
                                     <th><?=lang('washer_name_arabic')?></th>
+                                    <th><?=lang('service_name_en')?></th>
+                                    <th><?=lang('service_name_ar')?></th>
                                     <th><?= lang('status')?></th>
                                     <th><?= lang('date_add')?></th>
                                     <th><?= lang('action')?></th>
@@ -72,11 +74,8 @@ if (!loggedin()) {
                                 while ($row = mysqli_fetch_assoc($query)) {
                                     $service_id = $row['service_id'];
                                     $washer_id = $row['washer_id'];
-                                    $washer_name_en = $row['washer_name_en'];
-                                    $washer_name_ar = $row['washer_name_ar'];
-                                    $washer_desc_en = $row['washer_desc_en'];
-                                    $washer_desc_ar = $row['washer_desc_ar'];
-                                    $washer_image = $row['washer_image'];
+                                    $service_name_en = $row['service_name_en'];
+                                    $service_name_ar = $row['service_name_ar'];
                                     $display = $row['display'];
                                     $date = $row['date'];
                                     ?>
@@ -96,6 +95,12 @@ if (!loggedin()) {
                                         </td>
                                         <td>
                                             <?= $washer_name_ar ?>
+                                        </td>
+                                        <td>
+                                            <?= $service_name_en ?>
+                                        </td>
+                                        <td>
+                                            <?= $service_name_ar ?>
                                         </td>
                                         <td>
                                             <?php if ($display == 1) { ?>
@@ -196,7 +201,7 @@ if (!loggedin()) {
 <script>
     $(document).ready(function () {
         $("#cssmenu ul>li").removeClass("active");
-        $("#item5").addClass("active");
+        $("#item4").addClass("active");
     });
     $('body').on('change', '.change_status_off', function () {
         var change_status_off = $(this).attr('data-id');
